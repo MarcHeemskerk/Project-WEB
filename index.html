@@ -3,131 +3,92 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style/styleYeet.css">
-
+    <link rel="stylesheet" type="text/css" href="style/styleSheet.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-    <script src="javascript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>99 Verhalen</title>
 </head>
 
 <body>
 
-    <header class="container">
-        <a href="index.html">
-            <img src="images/logo-uov.svg" alt="Logo U-OV">
+    <header>
+
+        <a class="block" href="index.html">
+            <img src="images/logo-uov-negative.svg" alt="Logo U-OV">
         </a>
 
         <h1>99 Verhalen</h1>
 
         <form action="/action_page.php">
-            <img src="Zoekicoon" alt="Zoek icoontje">
             <input type="text" name="search" placeholder="Zoek">
-            <input type="submit" value="Zoeken">
         </form>
 
-        <a href="">
-            <img href="mijnOV" src="" alt="Mijn ov icoontje">
-            Mijn OV
+        <a class="mijnuov block" href="mijnUOV.html">
+            <span class="far fa-user"></span>
         </a>
 
-        <a href="">
-            <img src="Darkmode" alt="Darkmode Icoontje">
-        </a>
     </header>
 
     <main>
 
-        <section>
+            <button id="filtersShowBtn" class="block">Filter de verhalen</button>
+            <button id="verrasMe" class="block">Verras me!</button>
+
+        <section id="filters">
 
             <form action="/Filter.php">
-                <h2>Home</h2>
 
-                <fieldset>
-
-                    <legend>Home</legend>
-
-                    <label for="populair">Populair &amp; Voorjou</label>
-                    <input type="radio" name="favorieten" id="populair">
-
-                    <label for="favorieten">Favorieten &amp; Verder lezen</label>
-                    <input type="radio" name="favorieten" id="favorieten">
-
-                    <input type="submit" value="Submit">
-
-                </fieldset>
 
                 <h2>Filter</h2>
 
-                <fieldset>
+                <fieldset class="feest">
+
                     <legend>Gerne</legend>
 
-                    <label for="biografie">Biografie</label>
-                    <input type="checkbox" name="biografie" id="biografie">
+                    <input type="checkbox" name="biografie" id="een">
+                    <label for="een">Biografie</label>
 
-                    <label for="detective">Detective</label>
                     <input type="checkbox" name="detective" id="detective">
+                    <label for="detective">Detective</label>
 
-                    <label for="dokters">Dokters</label>
                     <input type="checkbox" name="dokters" id="dokters">
+                    <label for="dokters">Dokters</label>
 
-                    <label for="griezellig">Griezellig</label>
                     <input type="checkbox" name="griezellig" id="griezellig">
+                    <label for="griezellig">Griezellig</label>
 
-                    <label for="Historisch">Historisch</label>
                     <input type="checkbox" name="Historisch" id="Historisch">
+                    <label for="Historisch">Historisch</label>
 
-                    <label for="humurr">Humor</label>
                     <input type="checkbox" name="humurr" id="humurr">
+                    <label for="humurr">Humor</label>
 
-                    <label for="oorlog">Oorlog</label>
-                    <input type="checkbox" name="oorlog" id="oorlog">
-
-                    <label for="psychologisch">Psychologisch</label>
-                    <input type="checkbox" name="psychologisch" id="psychologisch">
-
-                    <label for="romantisch">Romantisch</label>
-                    <input type="checkbox" name="romantisch" id="romantisch">
-
-                    <label for="scienceFiction">Science Fiction</label>
-                    <input type="checkbox" name="scienceFiction" id="scienceFiction">
-
-                    <label for="spanningAvontuur">Spanning &amp; Avontuur</label>
-                    <input type="checkbox" name="spanningAvontuur" id="spanningAvontuur">
-
-                    <label for="waargebeurd">Waargebeurd</label>
-                    <input type="checkbox" name="waargebeurd" id="waargebeurd">
-
-                    <label for="western">Western</label>
-                    <input type="checkbox" name="western" id="western">
-
-                    <label for="zeeverhaal">Zeeverhaal</label>
-                    <input type="checkbox" name="zeeverhaal" id="zeeverhaal">
                     <input type="submit" value="Submit">
 
                 </fieldset>
 
+                <fieldset class="sfeer">
 
-                <fieldset>
                     <legend>Sfeer</legend>
 
-                    <label for="abstract">Abstract</label>
                     <input type="checkbox" name="abstract" id="abstract">
+                    <label for="abstract">Abstract</label>
 
-                    <label for="chaotisch">Chaotisch</label>
                     <input type="checkbox" name="chaotisch" id="chaotisch">
+                    <label for="chaotisch">Chaotisch</label>
 
-                    <label for="kleurrijk">Kleurrijk</label>
                     <input type="checkbox" name="kleurrijk" id="kleurrijk">
+                    <label for="kleurrijk">Kleurrijk</label>
 
-                    <label for="Modern">Modern</label>
                     <input type="checkbox" name="Modern" id="Modern">
+                    <label for="Modern">Modern</label>
 
-                    <label for="minimalistisch">Minimalistisch</label>
                     <input type="checkbox" name="minimalistisch" id="minimalistisch">
+                    <label for="minimalistisch">Minimalistisch</label>
 
-                    <label for="ouderwets">Ouderwets</label>
                     <input type="checkbox" name="ouderwets" id="ouderwets">
+                    <label for="ouderwets">Ouderwets</label>
+
                     <input type="submit" value="Submit">
                 </fieldset>
 
@@ -140,107 +101,82 @@
                         <option value="">Geliked (Oplopend)</option>
                         <option value="">Gelezen (Aflopend)</option>
                         <option value="">Gelezen (Oplopend)</option>
-                        <option value="">Geüpload (Aflopend)</option>
-                        <option value="">Geüpload (Oplopend)</option>
                     </select>
+
                 </fieldset>
+
             </form>
 
         </section>
 
-        <h2>Alle Verhalen</h2>
         <section>
-            <div class="row">
-                <article class="item">
-                    <img src="images/placeholder.jpg" alt="HeaderImage">
-                    <h3>Eric Lucassen</h3>
-                    <p class="likes">69 likes</p>
-                    <h4>Griezelig</h4>
-                    <p class="date">28 november 2018</p>
-                    <p>Gedver de tyfus hoeren kanker joden ik pis in jullie brievenbussen, jullie stukken op gedroogd fucking kak. Ik steek je dick er af</p>
-                    <a href="">Lees het hele verhaal</a>
-                    <span class="fas fa-heart"></span>
-                </article>
 
-                <article class="item">
-                    <img src="images/placeholder.jpg" alt="HeaderImage">
-                    <h3>Western</h3>
-                    <p class="likes">33 likes</p>
-                    <h4>Ouderwets</h4>
-                    <p class="date">23 november 2018</p>
-                    <p>Cowboys enzo lenkertjes</p>
-                    <a href="">Lees het hele verhaal</a>
-                    <span class="far fa-heart"></span>
-                </article>
+            <h2 class="head">Alle Verhalen</h2>
 
-                <article class="item">
-                    <img src="images/placeholder.jpg" alt="HeaderImage">
-                    <h3>Eric Lucassen</h3>
-                    <p class="likes">69 likes</p>
-                    <h4>Griezelig</h4>
-                    <p class="date">28 november 2018</p>
-                    <p>Gedver de tyfus hoeren kanker joden ik pis in jullie brievenbussen, jullie stukken op gedroogd fucking kak. Ik steek je dick er af</p>
-                    <a href="">Lees het hele verhaal</a>
-                    <span class="far fa-heart"></span>
-                </article>
+            <article>
 
-                <article class="item">
+                <a href="/verhalen/stijlverhaal1.html">
                     <img src="images/placeholder.jpg" alt="HeaderImage">
-                    <h3>Western</h3>
-                    <p class="likes">33 likes</p>
-                    <h4>Ouderwets</h4>
-                    <p class="date">23 november 2018</p>
-                    <p>Cowboys enzo lenkertjes</p>
-                    <a href="">Lees het hele verhaal</a>
-                    <span class="far fa-heart"></span>
-                </article>
-            </div>
 
-            <div class="row">
-             <article class="item">
-                    <img src="images/placeholder.jpg" alt="HeaderImage">
-                    <h3>Eric Lucassen</h3>
-                    <p class="likes">69 likes</p>
-                    <h4>Griezelig</h4>
-                    <p  class="date">28 november 2018</p>
-                    <p>Gedver de tyfus hoeren kanker joden ik pis in jullie brievenbussen, jullie stukken op gedroogd fucking kak. Ik steek je dick er af</p>
-                    <a href="">Lees het hele verhaal</a>
-                    <span class="far fa-heart"></span>
-                </article>
+                    <div>
+                        <h3>Eric Lucassen</h3>
+                        <p>69 likes</p>
+                        <h4>Persoonlijk</h4>
+                        <span class="liked fas fa-heart"></span>
+                    </div>
 
-                <article class="item">
-                    <img src="images/placeholder.jpg" alt="HeaderImage">
-                    <h3>Western</h3>
-                    <p class="likes">33 likes</p>
-                    <h4>Ouderwets</h4>
-                    <p  class="date">23 november 2018</p>
-                    <p>Cowboys enzo lenkertjes</p>
-                    <a href="">Lees het hele verhaal</a>
-                    <span class="far fa-heart"></span>
-                </article>
+                </a>
 
-               <article class="item">
-                    <img src="images/placeholder.jpg" alt="HeaderImage">
-                    <h3>Eric Lucassen</h3>
-                    <p class="likes">69 likes</p>
-                    <h4>Griezelig</h4>
-                    <p class="date">28 november 2018</p>
-                    <p>Gedver de tyfus hoeren kanker joden ik pis in jullie brievenbussen, jullie stukken op gedroogd fucking kak. Ik steek je dick er af</p>
-                    <a href="">Lees het hele verhaal</a>
-                    <span class="far fa-heart"></span>
-                </article>
+            </article>
 
-               <article class="item">
+            <article>
+
+                <a href="/verhalen/stijlverhaal2.html">
                     <img src="images/placeholder.jpg" alt="HeaderImage">
-                    <h3>Western</h3>
-                    <p class="likes">33 likes</p>
-                    <h4>Ouderwets</h4>
-                    <p class="date">23 november 2018</p>
-                    <p>Cowboys enzo lenkertjes</p>
-                    <a href="">Lees het hele verhaal</a>
-                    <span class="far fa-heart"></span>
-                </article>
-            </div>
+
+                    <div>
+                        <h3>Haiku</h3>
+                        <p class="likes">52 likes</p>
+                        <h4>Cultureel</h4>
+                        <span class="notLiked fas fa-heart"></span>
+                    </div>
+
+                </a>
+
+            </article>
+
+            <article>
+
+                <a href="/verhalen/stijlverhaal3.html">
+                    <img src="images/placeholder.jpg" alt="HeaderImage">
+
+                    <div>
+                        <h3>Western</h3>
+                        <p class="likes">49 likes</p>
+                        <h4>Cultureel</h4>
+                        <span class="notLiked fas fa-heart"></span>
+                    </div>
+
+                </a>
+
+            </article>
+
+            <article>
+
+                <a href="/verhalen/stijlverhaal4.html">
+                    <img src="images/placeholder.jpg" alt="HeaderImage">
+
+                    <div>
+                        <h3>Zombie</h3>
+                        <p class="likes">23 likes</p>
+                        <h4>Persoonlijk</h4>
+                        <span class="liked fas fa-heart"></span>
+                    </div>
+
+                </a>
+
+            </article>
+
         </section>
 
     </main>
@@ -248,6 +184,9 @@
     <footer>
 
     </footer>
+
+    <script src="js/javascript.js"></script>
+
 </body>
 
 </html>
