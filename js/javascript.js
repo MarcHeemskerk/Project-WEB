@@ -2,15 +2,18 @@
 /*eslint-env browser*/
 /*eslint 'no-console':0*/
 
+var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+if (w<950){
 document.getElementById("filters").style.display = "none";
+}
 
 function showFilters() {
-    var idSelector = document.getElementById("filters");
-    if (idSelector.style.display === "block") {
-        idSelector.style.display = "none";
+     var x = document.getElementById("filters");
+    if (x.style.display === "block") {
+        x.style.display = "none";
     } else {
-        idSelector.style.display = "block";
+        x.style.display = "block";
     }
-}
+    }
 document.getElementById("filtersShowBtn").addEventListener("click", showFilters);
-

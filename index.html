@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@
 
         <h1>99 Verhalen</h1>
 
-        <form action="/action_page.php">
+        <form>
             <input type="text" name="search" placeholder="Zoek">
         </form>
 
@@ -31,37 +31,49 @@
 
     <main>
 
+        <div class="buttons">
+
             <button id="filtersShowBtn" class="block">Filter de verhalen</button>
             <button id="verrasMe" class="block">Verras me!</button>
+
+        </div>
 
         <section id="filters">
 
             <form action="/Filter.php">
 
+            <fieldset>
 
-                <h2>Filter</h2>
+                    <legend>Home</legend>
 
-                <fieldset class="feest">
+                    <input type="radio" name="homeFilter" id="populair" checked>
+                    <label for="populair">Populair</label>
 
-                    <legend>Gerne</legend>
+                    <input type="radio" name="homeFilter" id="geliked">
+                    <label for="geliked">Geliked</label>
+
+                    <input type="radio" name="homeFilter" id="VerderLezen">
+                    <label for="VerderLezen">Verder Lezen</label>
+
+                    <input type="submit" value="Submit">
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Genre</legend>
 
                     <input type="checkbox" name="biografie" id="een">
-                    <label for="een">Biografie</label>
+                    <label for="een">Komedie (28)</label>
 
                     <input type="checkbox" name="detective" id="detective">
-                    <label for="detective">Detective</label>
+                    <label for="detective">Kunst (22)</label>
 
                     <input type="checkbox" name="dokters" id="dokters">
-                    <label for="dokters">Dokters</label>
+                    <label for="dokters">Persoonlijk (25)</label>
 
                     <input type="checkbox" name="griezellig" id="griezellig">
-                    <label for="griezellig">Griezellig</label>
-
-                    <input type="checkbox" name="Historisch" id="Historisch">
-                    <label for="Historisch">Historisch</label>
-
-                    <input type="checkbox" name="humurr" id="humurr">
-                    <label for="humurr">Humor</label>
+                    <label for="griezellig">Politiek (24)</label>
 
                     <input type="submit" value="Submit">
 
@@ -69,38 +81,29 @@
 
                 <fieldset class="sfeer">
 
-                    <legend>Sfeer</legend>
+                    <legend>Lengte</legend>
 
-                    <input type="checkbox" name="abstract" id="abstract">
-                    <label for="abstract">Abstract</label>
+                    <input type="checkbox" name="25regels" id="25regels">
+                    <label for="25regels">tot 25 regels (12)</label>
 
-                    <input type="checkbox" name="chaotisch" id="chaotisch">
-                    <label for="chaotisch">Chaotisch</label>
+                    <input type="checkbox" name="26-75regels" id="26-75regels">
+                    <label for="26-75regels">26 tot 75 regels (40)</label>
 
-                    <input type="checkbox" name="kleurrijk" id="kleurrijk">
-                    <label for="kleurrijk">Kleurrijk</label>
-
-                    <input type="checkbox" name="Modern" id="Modern">
-                    <label for="Modern">Modern</label>
-
-                    <input type="checkbox" name="minimalistisch" id="minimalistisch">
-                    <label for="minimalistisch">Minimalistisch</label>
-
-                    <input type="checkbox" name="ouderwets" id="ouderwets">
-                    <label for="ouderwets">Ouderwets</label>
+                    <input type="checkbox" name="75+regels" id="75+regels">
+                    <label for="75+regels">meer dan 75 regels (47)</label>
 
                     <input type="submit" value="Submit">
                 </fieldset>
 
-                <h2>Sorteer op</h2>
-
                 <fieldset>
+                    <legend>Sorteer op</legend>
 
-                    <select id="sorteerOpSelect">
-                        <option value="">Geliked (Aflopend)</option>
-                        <option value="">Geliked (Oplopend)</option>
-                        <option value="">Gelezen (Aflopend)</option>
-                        <option value="">Gelezen (Oplopend)</option>
+                    <select>
+                        <option>Meest Gewardeerd</option>
+                        <option>Alfabetisch A-Z</option>
+                        <option>Alfabetisch Z-A</option>
+                        <option>Kortste verhaal</option>
+                        <option>Langste verhaal</option>
                     </select>
 
                 </fieldset>
@@ -109,74 +112,157 @@
 
         </section>
 
-        <section>
+        <section class = "second-main">
 
             <h2 class="head">Alle Verhalen</h2>
 
-            <article>
+            <div class="flex">
 
-                <a href="/verhalen/stijlverhaal1.html">
-                    <img src="images/placeholder.jpg" alt="HeaderImage">
+                <article>
 
-                    <div>
-                        <h3>Eric Lucassen</h3>
-                        <p>69 likes</p>
-                        <h4>Persoonlijk</h4>
-                        <span class="liked fas fa-heart"></span>
-                    </div>
+                    <a href="/verhalen/stijlverhaal4.html">
+                        <img src="images/placeholder.jpg" alt="HeaderImage">
 
-                </a>
+                        <div>
+                            <h3>Zombie</h3>
+                            <p class="likes">23 likes</p>
+                            <h4>Persoonlijk</h4>
+                            <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet libero ante. Aliquam congue pharetra pharetra. Duis volutpat.</p>
+                            <span class="liked fas fa-heart"></span>
+                            <p>Lees het hele verhaal.</p>
+                        </div>
 
-            </article>
+                    </a>
 
-            <article>
+                </article>
 
-                <a href="/verhalen/stijlverhaal2.html">
-                    <img src="images/placeholder.jpg" alt="HeaderImage">
+                <article>
 
-                    <div>
-                        <h3>Haiku</h3>
-                        <p class="likes">52 likes</p>
-                        <h4>Cultureel</h4>
-                        <span class="notLiked fas fa-heart"></span>
-                    </div>
+                    <a href="/verhalen/stijlverhaal4.html">
+                        <img src="images/placeholder2.jpg" alt="HeaderImage">
 
-                </a>
+                        <div>
+                            <h3>Zombie</h3>
+                            <p class="likes">23 likes</p>
+                            <h4>Persoonlijk</h4>
+                            <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet libero ante. Aliquam congue pharetra pharetra. Duis volutpat.</p>
+                            <span class="liked fas fa-heart"></span>
+                            <p>Lees het hele verhaal.</p>
+                        </div>
 
-            </article>
+                    </a>
 
-            <article>
+                </article>
 
-                <a href="/verhalen/stijlverhaal3.html">
-                    <img src="images/placeholder.jpg" alt="HeaderImage">
+                <article>
 
-                    <div>
-                        <h3>Western</h3>
-                        <p class="likes">49 likes</p>
-                        <h4>Cultureel</h4>
-                        <span class="notLiked fas fa-heart"></span>
-                    </div>
+                    <a href="/verhalen/stijlverhaal4.html">
+                        <img src="images/placeholder3.jpg" alt="HeaderImage">
 
-                </a>
+                        <div>
+                            <h3>Zombie</h3>
+                            <p class="likes">23 likes</p>
+                            <h4>Persoonlijk</h4>
+                            <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet libero ante. Aliquam congue pharetra pharetra. Duis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet libero ante. Aliquam congue pharetra pharetra. Duis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet libero ante. Aliquam congue pharetra pharetra. Duis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet libero ante. Aliquam congue pharetra pharetra. Duis volutpat.Lorem ipsum dolor sit amet, consecdtetur adipiscing elit. Aliquam laoreet libero.</p>
+                            <span class="liked fas fa-heart"></span>
+                            <p>Lees het hele verhaal.</p>
+                        </div>
 
-            </article>
+                    </a>
 
-            <article>
+                </article>
 
-                <a href="/verhalen/stijlverhaal4.html">
-                    <img src="images/placeholder.jpg" alt="HeaderImage">
+                <article>
 
-                    <div>
-                        <h3>Zombie</h3>
-                        <p class="likes">23 likes</p>
-                        <h4>Persoonlijk</h4>
-                        <span class="liked fas fa-heart"></span>
-                    </div>
+                    <a href="/verhalen/stijlverhaal4.html">
+                        <img src="images/placeholder4.jpg" alt="HeaderImage">
 
-                </a>
+                        <div>
+                            <h3>Zombie</h3>
+                            <p class="likes">23 likes</p>
+                            <h4>Persoonlijk</h4>
+                            <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet libero ante. Aliquam congue pharetra pharetra. Duis volutpat.</p>
+                            <span class="liked fas fa-heart"></span>
+                            <p>Lees het hele verhaal.</p>
+                        </div>
 
-            </article>
+                    </a>
 
+                </article>
+
+                <article>
+
+                    <a href="/verhalen/stijlverhaal4.html">
+                        <img src="images/placeholder2.jpg" alt="HeaderImage">
+
+                        <div>
+                            <h3>Zombie</h3>
+                            <p class="likes">23 likes</p>
+                            <h4>Persoonlijk</h4>
+                            <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet libero ante. Aliquam congue pharetra pharetra. Duis volutpat.</p>
+                            <span class="liked fas fa-heart"></span>
+                            <p>Lees het hele verhaal.</p>
+                        </div>
+
+                    </a>
+
+                </article>
+
+                <article>
+
+                    <a href="/verhalen/stijlverhaal4.html">
+                        <img src="images/placeholder.jpg" alt="HeaderImage">
+
+                        <div>
+                            <h3>Zombie</h3>
+                            <p class="likes">23 likes</p>
+                            <h4>Persoonlijk</h4>
+                            <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet libero ante. Aliquam congue pharetra pharetra. Duis volutpat.</p>
+                            <span class="liked fas fa-heart"></span>
+                            <p>Lees het hele verhaal.</p>
+                        </div>
+
+                    </a>
+
+                </article>
+
+                <article>
+
+                    <a href="/verhalen/stijlverhaal4.html">
+                        <img src="images/placeholder4.jpg" alt="HeaderImage">
+
+                        <div>
+                            <h3>Zombie</h3>
+                            <p class="likes">23 likes</p>
+                            <h4>Persoonlijk</h4>
+                            <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet libero ante. Aliquam congue pharetra pharetra. Duis volutpat.</p>
+                            <span class="liked fas fa-heart"></span>
+                            <p>Lees het hele verhaal.</p>
+                        </div>
+
+                    </a>
+
+                </article>
+
+                <article>
+
+                    <a href="/verhalen/stijlverhaal4.html">
+                        <img src="images/placeholder3.jpg" alt="HeaderImage">
+
+                        <div>
+                            <h3>Zombie</h3>
+                            <p class="likes">23 likes</p>
+                            <h4>Persoonlijk</h4>
+                            <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet libero ante. Aliquam congue pharetra pharetra. Duis volutpat.</p>
+                            <span class="liked fas fa-heart"></span>
+                            <p>Lees het hele verhaal.</p>
+                        </div>
+
+                    </a>
+
+                </article>
+
+            </div>
         </section>
 
     </main>
