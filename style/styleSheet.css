@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+@media screen and (min-width: 0em) {
 
-* {
+    * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+
 
 .block {
     align-self: center
@@ -115,7 +117,7 @@ body header form input:focus {
     z-index: 20;
 }
 
-#filters{
+#filters {
     height: 100vh;
     width: 100vw;
     background-color: rgb(252, 217, 0);
@@ -148,7 +150,6 @@ main section form fieldset label {
     position: relative;
     padding: 0.9em;
 }
-
 
 main section form fieldset label::after {
     content: "";
@@ -186,15 +187,12 @@ legend {
 
 body main section article {
     padding: 0em 1em 0em 1em;
-    height: 300px;
+    height: 18.75em;
     margin-bottom: 0.625em;
 }
 
-main section article a {
-    text-decoration: none;
-}
 
-main section article a img {
+main section article img {
     width: 85vw;
     height: 17em;
     border-radius: 0.625em 0.625em 0.625em 0.625em;
@@ -204,36 +202,40 @@ main section article a img {
     position: absolute;
 }
 
-main section article a div {
+main section article div {
     background-color: white;
     border-radius: 0.625em 0.625em 0.625em 0.625em;
     box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
-    width: 20em;
-    height: 6.4em;
+    width: 18em;
+    height: 7.5em;
     position: relative;
     margin-left: auto;
     z-index: 10;
-    top: 155px;
+    top: 8.5em;
 }
 
-main section article a div h3 {
-    font-size: 1.3rem;
+main section article div h3 {
+    font-size: 1rem;
     font-weight: 700;
     color: #000;
     padding: 1em 0em 0em 1.25em;
 }
 
-.likes {
+.score {
     font-size: 1.1rem;
-    font-weight: 300;
-    § margin: 0em 0em 0em 1em;
-    color: #000;
+    font-weight: 600;
+    border-radius: 0.625em 0.625em 0.625em 0.625em;
+    margin: 0em 0em 0em 0em;
+    padding: 0.5em;
+    box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
+    color: orange;
+    background-color: white;
     position: absolute;
-    right: 1.25em;
-    top: 1em;
+    right: 0.0em;
+    top: -7.75em;
 }
 
-main section article a div h4 {
+main section article div h4 {
     font-size: 1.0rem;
     font-weight: 300;
     background-color: orange;
@@ -249,33 +251,29 @@ main section article a div h4 {
     left: 1.25em;
 }
 
-body main section article a div span {
+body main section article div span {
     font-size: 2rem;
     font-weight: 300;
     margin: 0em -0.5em -0.5em 0em;
     position: absolute;
     right: 1.25em;
     bottom: 1em;
-}
-
-.liked {
-    color: red;
-}
-
-.notLiked {
     color: lightgray;
 }
 
-.story {
-    display: none;
+.liked {
+    color: orangered;
 }
 
-body main section article a div p:last-of-type {
+
+body main section div article div a p {
     display: none;
 }
 
 .flex {
     background-color: transparent;
+}
+
 }
 
 @media screen and (min-width: 32em) {
@@ -306,13 +304,15 @@ body main section article a div p:last-of-type {
         background-image: url('..//images/search-solid-black.svg');
     }
 
-    #filters{
+    #filters {
         padding-top: 1em;
     }
-      main section form{
+
+    main section form {
         margin: auto;
-          width: 70vw;
+        width: 70vw;
     }
+
     main section form fieldset label {
         background-color: white;
         flex-direction: row;
@@ -328,8 +328,6 @@ body main section article a div p:last-of-type {
 
     .flex {
         display: flex;
-        /*    justify-content: space-around;
-        */
         flex-flow: column wrap;
     }
 
@@ -343,75 +341,84 @@ body main section article a div p:last-of-type {
     main section article a img {
         width: 35vw;
         height: 11em;
+        margin-left: auto;
         z-index: 10;
     }
 
-    main section article a div {
+    main section article div {
 
         width: 85vw;
         height: 11em;
-        margin-left: auto;
         margin-right: inherit;
         z-index: 1;
         top: 0px;
     }
 
-    main section article a div h3 {
+    main section article div h3 {
         position: absolute;
+        padding-right: 2em;
         left: 35vw;
         top 1em;
     }
 
-    main section article a div h4 {
+    main section article div h4 {
         width: 7.8em;
-        padding-top: 0.3em;
-        padding-bottom: 0.3em;
         position: absolute;
         height: 1.5em;
         left: 35vw;
-        bottom: 3em;
         z-index: 90;
         margin: 0em 0em 0em 1em;
     }
 
-    .likes {
-        right: 1em;
-    }
-
-    body main section article a div span {
+    body main section article div span {
         right: 1em;
         margin: 0em -0.5em -0.5em 0em;
     }
 
-    .story {
-        display: block;
+    .score {
         font-size: 1.0rem;
-        font-weight: 300;
-        margin: 0em 0em 1em 1.25em;
-        width: 43vw;
-        height: 2.4em;
-        color: #000;
-        position: absolute;
+        margin: 0em 0em 0em 1em;
+        right: auto;
         left: 35vw;
-        top: 3.3em;
-        overflow: hidden;
-    }
-
-    body main section article a div p:last-of-type {
-        display: inline-block;
-        font-size: 1.0rem;
-        font-weight: 300;
-        padding: 1em 0em 0em 1.25em;
-        color: #1286b6;
-        position: absolute;
-        left: 35vw;
-        bottom: 1em;
-
+        top: 5.5em;
     }
 }
 
+@media screen and (min-width: 45em) {
 
+    body main section div article div a p {
+        display: block;
+        position: absolute;
+        color: black;
+        text-decoration: underline;
+        font-size: 1.1em;
+        left: 35vw;
+        z-index: 90;
+        bottom: 1em;
+        margin: 0em 0em 0em 1em;
 
+    }
+
+        .score {
+        font-size: 1.0rem;
+        margin: 0em 0em 0em 1em;
+        right: auto;
+        left: 35vw;
+        top: 4.6em;
+    }
+
+      main section article div h4 {
+        width: 7.8em;
+        position: absolute;
+        height: 1.5em;
+        top: 5em;
+        left: auto;
+        right: 1em;
+        z-index: 90;
+        margin: 0em 0em 0em 1em;
+    }
+
+}
 
 @media screen and (min-width: 52em) {
 
@@ -441,11 +448,12 @@ body main section article a div p:last-of-type {
         background-image: url('..//images/search-solid-black.svg');
     }
 
-    #filters{
+    #filters {
         padding-top: 1em;
         height: 50vh;
     }
-      main section form{
+
+    main section form {
         width: 90vw;
         display: flex;
         flex-flow: row wrap;
@@ -453,6 +461,7 @@ body main section article a div p:last-of-type {
         margin: auto;
 
     }
+
     main section form fieldset label {
         background-color: white;
         flex-direction: row;
@@ -461,18 +470,9 @@ body main section article a div p:last-of-type {
         border-radius: 0.625em 0.625em 0.625em 0.625em;
     }
 
-    body main div {
-        display: flex;
-        justify-content: space-around;
+    .flex{
+        margin: auto;
     }
-
-    .flex {
-        display: flex;
-        /*    justify-content: space-around;
-        */
-        flex-flow: column wrap;
-    }
-
 
     body main section article {
         height: 12em;
@@ -487,65 +487,36 @@ body main section article a div p:last-of-type {
         z-index: 10;
     }
 
-    main section article a div {
+    body main section div article div a p {
+        left: 16.3em;
+    }
+       main section article div h3 {
+        left: 18em;
+    }
 
+    .score {
+        left: 18em;
+    }
+    main section article div {
         width: 45em;
-        height: 11em;
-        margin-left: auto;
-        margin-right: inherit;
-        z-index: 1;
-        top: 0px;
     }
 
-    main section article a div h3 {
-        position: absolute;
-        left: 14em;
-        top 1em;
-    }
 
-    main section article a div h4 {
+      main section article div h4 {
         width: 7.8em;
-        padding-top: 0.3em;
-        padding-bottom: 0.3em;
         position: absolute;
         height: 1.5em;
-        left: 31em;
-        bottom: 1em;
+        top: 5em;
+        left: auto;
+        right: 1em;
         z-index: 90;
         margin: 0em 0em 0em 1em;
-    }
-
-    .likes {
-        right: 1em;
-    }
-
-    body main section article a div span {
-        right: 1em;
-        margin: 0em -0.5em -0.5em 0em;
-    }
-
-    .story {
-        display: block;
-        font-size: 1.0rem;
-        font-weight: 300;
-        margin: 0em 0em 1em 1.25em;
-        width: 23.6em;
-        height: 3.6em;
-        color: #000;
-        position: absolute;
-        left: 19em;
-        top: 3.3em;
-        overflow: hidden;
-    }
-
-    body main section article a div p:last-of-type {
-        width: 12em;
-        left: 19em;
-        position: absolute;
     }
 }
 
 @media screen and (min-width: 70em) {
+
+
 
     body main div {
         display: flex;
@@ -557,17 +528,19 @@ body main section article a div p:last-of-type {
         flex-flow: wrap;
     }
 
-    #filters{
+    #filters {
         padding-top: 1em;
         height: 35vh;
     }
-      main section form{
+
+    main section form {
         width: 90vw;
         display: flex;
         justify-content: space-between;
         margin: auto;
 
     }
+
     main section form fieldset label {
         background-color: white;
         flex-direction: row;
@@ -579,17 +552,17 @@ body main section article a div p:last-of-type {
 
     body main section article {
         height: 26em;
-        width: 20em;
+        width: 20.5em;
         margin: 1em;
     }
 
     main section article a img {
         width: 20em;
-        height: 9em;
+        height: 11em;
         z-index: 10;
     }
 
-    main section article a div {
+    main section article div {
         width: 20em;
         margin: 0;
         height: 25em;
@@ -597,23 +570,40 @@ body main section article a div p:last-of-type {
         top: 0px;
     }
 
-    main section article a div h3 {
+    main section article div h3 {
         position: absolute;
+        font-size: 1.2em;
         left: 1em;
-        bottom: 10.4em;
+        bottom: 7em;
+        width: 15em;
+        display: flex;
+        align-items: center;
+        height: 4em;
         margin: 0;
         padding: 0;
+
     }
 
-    main section article a div h4 {
+    main section article div h4 {
         padding: 0em;
         position: absolute;
         height: 1.5em;
         left: 31em;
-        top: 12.2em;
+        top: auto;
+        bottom: 5em;
         left: 1em;
         z-index: 90;
         margin: 0em 0em 0em 0em;
+    }
+
+    .score {
+        position: absolute;
+        top: auto;
+        bottom: 5em;
+        right: 1em;
+        left: auto;
+        width:
+
     }
 
     .likes {
@@ -621,33 +611,22 @@ body main section article a div p:last-of-type {
         top: 9.2em;
     }
 
-    body main section article a div span {
+    body main section article div span {
         right: 1em;
         margin: 0em -0.5em -0.5em 0em;
     }
 
-    .story {
-        position: absolute;
-        left: 1em;
-        top: 14.4em;
-        width: 18em;
-        height: 7.3em;
-        margin: 0;
-        padding: 0;
-    }
-
-    body main section article a div p:last-of-type {
+    body main section article div a p:last-of-type {
         width: 12em;
         margin: 0em;
-        left: 0em;
+        left: 1em;
         position: absolute;
     }
 
 }
 
-
-
 @media screen and (min-width: 83em) {
+
 
     .second-main {
         margin-left: 16em;
@@ -661,13 +640,14 @@ body main section article a div p:last-of-type {
     #filtersShowBtn {
         display: none;
     }
-    .flex{
+
+    .flex {
         margin-top: 3.9em;
         display: flex;
         justify-content: space-around;
     }
 
-     #verrasMe {
+    #verrasMe {
         text-align: left;
         width: 15em;
         margin-top: 4em;
@@ -684,21 +664,23 @@ body main section article a div p:last-of-type {
         height: 90vh;
         background-color: transparent;
     }
-      main section form{
+
+    main section form {
         width: 90vw;
         display: flex;
         flex-flow: column;
     }
 
-    main section form fieldset{
+    main section form fieldset {
         width: 16em;
         margin-top: 1.5em;
     }
 
-    main section form fieldset:first-of-type{
+    main section form fieldset:first-of-type {
         width: 16em;
         margin-top: 0em;
     }
+
     main section form fieldset label {
         background-color: white;
         flex-direction: row;
@@ -707,7 +689,7 @@ body main section article a div p:last-of-type {
         border-radius: 0em 0.625em 0.625em 0em;
     }
 
-    .head{
+    .head {
         text-align: center;
         color: white;
         font-size: 2em;
