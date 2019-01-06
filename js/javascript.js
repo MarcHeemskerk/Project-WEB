@@ -17,3 +17,6 @@ function showFilters() {
     }
     }
 document.getElementById("filtersShowBtn").addEventListener("click", showFilters);
+
+
+
