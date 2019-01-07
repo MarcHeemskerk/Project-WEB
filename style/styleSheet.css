@@ -656,9 +656,9 @@
     #filters {
         display: block;
         width: 16em;
-        position: absolute;
         height: 90vh;
         background-color: transparent;
+        position: absolute;
     }
 
     main section form {

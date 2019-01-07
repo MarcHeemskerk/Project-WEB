@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="730px" viewBox="0 0 375 730" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>last-mobile</title>
+    <desc>Created with Sketch.</desc>
+    <g id="last-mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FF0000" x="0" y="0" width="375" height="730"></rect>
+        <polygon id="Path" fill="#000000" points="467 -96 200 181 467 181"></polygon>
+        <polygon id="Path-5" fill="#000000" transform="translate(20.436815, 242.436815) rotate(-225.000000) translate(-20.436815, -242.436815) " points="-14.5631855 208.936815 -14.5631855 275.936815 23.1494127 275.936815 55.4368145 236.737659 55.4368145 208.936815"></polygon>
+        <polygon id="Path-5-Copy" fill="#000000" points="-16 -1 -16 66 21.7125982 66 54 26.8008449 54 -1"></polygon>
+        <polygon id="Path-7" fill="#000000" points="267 74.5739017 267 0 89 2.23432384e-15 89 74.5739017 89 322 174.66478 321.649324 174.66478 74.5739017"></polygon>
+        <text id="THE-END" fill="#FFFFFF" font-family="Arial-Black, Arial Black" font-size="72" font-weight="700">
+            <tspan x="10.0214844" y="432">THE END</tspan>
+        </text>
+    </g>
+</svg>
