@@ -1,3 +1,5 @@
+    /*Header*/
+
     * {
         box-sizing: border-box;
         margin: 0;
@@ -70,6 +72,37 @@
 
 
 
+    /* Scroll Bar
+
+       Bron:https://www.cssscript.com/tiny-reading-progress-indicator-pure-javascript-rpbar-js/
+    */
+
+    #rp-bar {
+        width: 100%;
+        top: 3em;
+        right: 0;
+        position: fixed;
+        -webkit-box-shadow: 0 0 0px 4px black;
+        -moz-box-shadow: 0 0 0px 4px black;
+        box-shadow: 0 0 0px 4px black;
+    }
+
+    #rp-bar div {
+        height: 100%;
+        float: left;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #rp-read {
+        background-color: red;
+    }
+
+    #rp-unread {
+        background-color: black;
+    }
+
+
     /*Eric Lucassen Verhaal*/
 
     .eric p {
@@ -89,17 +122,18 @@
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
 
     }
 
     .first-background {
         height: 100vh;
-        background-image: url("../images/first-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/first-mobile.svg");
     }
 
     .second-background {
         height: 100vh;
-        background-image: url("../images/second-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/second-mobile.svg");
     }
 
     .storyImage1,
@@ -157,41 +191,9 @@
     }
 
 
-
-
     /* Comments */
     footer {
         margin-top: 2em;
     }
 
 
-    /* Scroll Bar
-
-       Bron:https://www.cssscript.com/tiny-reading-progress-indicator-pure-javascript-rpbar-js/
-    */
-
-
-    #rp-bar {
-        width: 100%;
-        top: 3em;
-        right: 0;
-        position: fixed;
-        -webkit-box-shadow: 0 0 0px 4px black;
-        -moz-box-shadow: 0 0 0px 4px black;
-        box-shadow: 0 0 0px 4px black;
-    }
-
-    #rp-bar div {
-        height: 100%;
-        float: left;
-        overflow: hidden;
-        position: relative;
-    }
-
-    #rp-read {
-        background-color: red;
-    }
-
-    #rp-unread {
-        background-color: black;
-    }
