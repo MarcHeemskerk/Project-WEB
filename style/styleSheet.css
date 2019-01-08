@@ -3,277 +3,276 @@
 @media screen and (min-width: 0em) {
 
     * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .block {
+        align-self: center
+    }
+
+    body {
+        background-color: rgb(247, 248, 247)
+    }
+
+    body header {
+        background-color: rgb(102, 91, 82);
+        width: 100vw;
+        height: 3.1em;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 100;
+    }
+
+    body header a img {
+        height: 1.8em;
+        margin-left: 0.8em;
+        align-self: center;
+    }
+
+    body header h1 {
+        color: white;
+        font-size: 1em;
+        flex-grow: <2>;
+        text-align: center;
+        align-self: center;
+    }
+
+    body header form input {
+        width: 30vw;
+        max-width: 45vw;
+        box-sizing: border-box;
+        border: 0;
+        outline: 0;
+        border: 0.5px solid white;
+        border-radius: 0.3em;
+        font-size: 0.8rem;
+        background: transparent;
+        background-size: 1rem;
+        background-position: 0.6em 0.6em;
+        background-repeat: no-repeat;
+        background-image: url('..//images/search-solid-white.svg');
+        padding: 0.625em 1.25em 0.625em 2.5em;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        margin-top: 0.375em;
+
+    }
+
+    body header form input:focus {
+        width: 50vw;
+        color: white;
+        text-decoration: underline
+    }
+
+    .mijnuov {
+        text-decoration: none;
+        color: white;
+        flex-grow: <0>;
+        align-self: center;
+        font-size: 1.5rem;
+        margin-right: 0.625em;
+    }
+
+    #filtersShowBtn {
+        width: 90vw;
+        height: 2.81em;
+        background-color: white;
+        border-radius: 0em 0em 0.625em 0em;
+        border: 0px;
+        box-shadow: 0em 0.5em 1.125em 0em rgba(136, 136, 136, 0.3);
+        text-align: left;
+        padding-left: 1em;
+        font-weight: 700;
+        font-size: 1.1rem;
+        background: white;
+        background-size: 1rem;
+        background-position: 80vw;
+        background-repeat: no-repeat;
+        background-image: url('..//images/search-solid-black.svg');
+        margin-top: 2.85em;
+        z-index: 20;
+    }
+
+    #verrasMe {
+        width: 90vw;
+        height: 2.81em;
+        background-color: white;
+        border-radius: 0em 0.625em 0.625em 0em;
+        border: 0px;
+        box-shadow: 0em 0.5em 1.125em 0em rgba(136, 136, 136, 0.3);
+        text-align: left;
+        padding-left: 1em;
+        font-weight: 400;
+        font-size: 1.1rem;
+        background: white;
+        background-size: 1rem;
+        background-position: 80vw;
+        background-repeat: no-repeat;
+        background-image: url('..//images/random-solid.svg');
+        margin-top: 0.7em;
+        z-index: 20;
+    }
+
+    #filters {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(252, 217, 0);
+
+    }
+
+    body main div {
+        background-color: rgb(252, 217, 0);
+        padding-bottom: 1.5em;
+    }
+
+    main section form {
+        width: 90vw;
+    }
+
+    main section form fieldset {
+        border: none;
+    }
+
+    main section form fieldset label {
+        padding: 0.625em;
+        margin-bottom: 0.2em;
+        background-color: white;
+        border-radius: 0em 0.625em 0.625em 0em;
+        border: 0px;
+        box-shadow: 0em 0.5em 1.125em 0em rgba(136, 136, 136, 0.3);
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+        padding: 0.9em;
+    }
+
+    main section form fieldset label::after {
+        content: "";
+        width: 2em;
+        height: 2em;
+        background-color: white;
+        border-style: solid;
+        border-color: orange;
+        border-width: 2px;
+        margin: 0em 0em 0em 1em;
+        display: inline-block;
+        border-radius: 5px;
+        position: absolute;
+        right: 1.25em;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    main section form fieldset [type=checkbox]:checked + label::after {
+        background-color: orange;
+    }
+
+    main section form fieldset [type=radio]:checked + label::after {
+        background-color: orange;
+    }
+
+    main section form fieldset input {
+        display: none;
+    }
+
+    legend {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    body main section article {
+        padding: 0em 1em 0em 1em;
+        height: 18.75em;
+        margin-bottom: 0.625em;
+    }
 
 
-.block {
-    align-self: center
-}
+    main section article img {
+        width: 85vw;
+        height: 17em;
+        border-radius: 0.625em 0.625em 0.625em 0.625em;
+        border: 0px;
+        box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
+        z-index: 1;
+        position: absolute;
+    }
 
-body {
-    background-color: rgb(247, 248, 247)
-}
+    main section article div {
+        background-color: white;
+        border-radius: 0.625em 0.625em 0.625em 0.625em;
+        box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
+        width: 18em;
+        height: 7.5em;
+        position: relative;
+        margin-left: auto;
+        z-index: 10;
+        top: 8.5em;
+    }
 
-body header {
-    background-color: rgb(102, 91, 82);
-    width: 100vw;
-    height: 3.1em;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 100;
-}
+    main section article div h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #000;
+        padding: 1em 0em 0em 1.25em;
+    }
 
-body header a img {
-    height: 1.8em;
-    margin-left: 0.8em;
-    align-self: center;
-}
+    .score {
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 0.625em 0.625em 0.625em 0.625em;
+        margin: 0em 0em 0em 0em;
+        padding: 0.5em;
+        box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
+        color: orange;
+        background-color: white;
+        position: absolute;
+        right: 0.0em;
+        top: -7.75em;
+    }
 
-body header h1 {
-    color: white;
-    font-size: 1em;
-    flex-grow: <2>;
-    text-align: center;
-    align-self: center;
-}
+    main section article div h4 {
+        font-size: 1.0rem;
+        font-weight: 300;
+        background-color: orange;
+        border-radius: 0.625em;
+        width: 40%;
+        text-align: center;
+        margin: 0em 0em 0em 0em;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        color: white;
+        position: absolute;
+        bottom: 1em;
+        left: 1.25em;
+    }
 
-body header form input {
-    width: 30vw;
-    max-width: 45vw;
-    box-sizing: border-box;
-    border: 0;
-    outline: 0;
-    border: 0.5px solid white;
-    border-radius: 0.3em;
-    font-size: 0.8rem;
-    background: transparent;
-    background-size: 1rem;
-    background-position: 0.6em 0.6em;
-    background-repeat: no-repeat;
-    padding: 0.625em 1.25em 0.625em 2.5em;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    margin-top: 0.375em;
-    background-image: url('..//images/search-solid-white.svg');
-}
+    body main section article div span {
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 0em -0.5em -0.5em 0em;
+        position: absolute;
+        right: 1.25em;
+        bottom: 1em;
+        color: lightgray;
+    }
 
-body header form input:focus {
-    width: 50vw;
-    color: white;
-    text-decoration: underline
-}
-
-.mijnuov {
-    text-decoration: none;
-    color: white;
-    flex-grow: <0>;
-    align-self: center;
-    font-size: 1.5rem;
-    margin-right: 0.625em;
-}
-
-#filtersShowBtn {
-    width: 90vw;
-    height: 2.81em;
-    background-color: white;
-    border-radius: 0em 0em 0.625em 0em;
-    border: 0px;
-    box-shadow: 0em 0.5em 1.125em 0em rgba(136, 136, 136, 0.3);
-    text-align: left;
-    padding-left: 1em;
-    font-weight: 700;
-    font-size: 1.1rem;
-    background: white;
-    background-size: 1rem;
-    background-position: 80vw;
-    background-repeat: no-repeat;
-    background-image: url('..//images/search-solid-black.svg');
-    margin-top: 2.85em;
-    z-index: 20;
-}
-
-#verrasMe {
-    width: 90vw;
-    height: 2.81em;
-    background-color: white;
-    border-radius: 0em 0.625em 0.625em 0em;
-    border: 0px;
-    box-shadow: 0em 0.5em 1.125em 0em rgba(136, 136, 136, 0.3);
-    text-align: left;
-    padding-left: 1em;
-    font-weight: 400;
-    font-size: 1.1rem;
-    background: white;
-    background-size: 1rem;
-    background-position: 80vw;
-    background-repeat: no-repeat;
-    background-image: url('..//images/random-solid.svg');
-    margin-top: 0.7em;
-    z-index: 20;
-}
-
-#filters {
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(252, 217, 0);
-
-}
-
-body main div {
-    background-color: rgb(252, 217, 0);
-    padding-bottom: 1.5em;
-}
-
-main section form {
-    width: 90vw;
-}
-
-main section form fieldset {
-    border: none;
-}
-
-main section form fieldset label {
-    padding: 0.625em;
-    margin-bottom: 0.2em;
-    background-color: white;
-    border-radius: 0em 0.625em 0.625em 0em;
-    border: 0px;
-    box-shadow: 0em 0.5em 1.125em 0em rgba(136, 136, 136, 0.3);
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    position: relative;
-    padding: 0.9em;
-}
-
-main section form fieldset label::after {
-    content: "";
-    width: 2em;
-    height: 2em;
-    background-color: white;
-    border-style: solid;
-    border-color: orange;
-    border-width: 2px;
-    margin: 0em 0em 0em 1em;
-    display: inline-block;
-    border-radius: 5px;
-    position: absolute;
-    right: 1.25em;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-main section form fieldset [type=checkbox]:checked + label::after {
-    background-color: orange;
-}
-
-main section form fieldset [type=radio]:checked + label::after {
-    background-color: orange;
-}
-
-main section form fieldset input {
-    display: none;
-}
-
-legend {
-    font-weight: 600;
-    font-size: 1.3rem;
-}
-
-body main section article {
-    padding: 0em 1em 0em 1em;
-    height: 18.75em;
-    margin-bottom: 0.625em;
-}
+    .liked {
+        color: orangered;
+    }
 
 
-main section article img {
-    width: 85vw;
-    height: 17em;
-    border-radius: 0.625em 0.625em 0.625em 0.625em;
-    border: 0px;
-    box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
-    z-index: 1;
-    position: absolute;
-}
+    body main section div article div a p {
+        display: none;
+    }
 
-main section article div {
-    background-color: white;
-    border-radius: 0.625em 0.625em 0.625em 0.625em;
-    box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
-    width: 18em;
-    height: 7.5em;
-    position: relative;
-    margin-left: auto;
-    z-index: 10;
-    top: 8.5em;
-}
-
-main section article div h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #000;
-    padding: 1em 0em 0em 1.25em;
-}
-
-.score {
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 0.625em 0.625em 0.625em 0.625em;
-    margin: 0em 0em 0em 0em;
-    padding: 0.5em;
-    box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
-    color: orange;
-    background-color: white;
-    position: absolute;
-    right: 0.0em;
-    top: -7.75em;
-}
-
-main section article div h4 {
-    font-size: 1.0rem;
-    font-weight: 300;
-    background-color: orange;
-    border-radius: 0.625em;
-    width: 40%;
-    text-align: center;
-    margin: 0em 0em 0em 0em;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    color: white;
-    position: absolute;
-    bottom: 1em;
-    left: 1.25em;
-}
-
-body main section article div span {
-    font-size: 2rem;
-    font-weight: 300;
-    margin: 0em -0.5em -0.5em 0em;
-    position: absolute;
-    right: 1.25em;
-    bottom: 1em;
-    color: lightgray;
-}
-
-.liked {
-    color: orangered;
-}
-
-
-body main section div article div a p {
-    display: none;
-}
-
-.flex {
-    background-color: transparent;
-}
-
+    .flex {
+        background-color: transparent;
+    }
 }
 
 @media screen and (min-width: 32em) {
@@ -399,7 +398,7 @@ body main section div article div a p {
 
     }
 
-        .score {
+    .score {
         font-size: 1.0rem;
         margin: 0em 0em 0em 1em;
         right: auto;
@@ -407,7 +406,7 @@ body main section div article div a p {
         top: 4.6em;
     }
 
-      main section article div h4 {
+    main section article div h4 {
         width: 7.8em;
         position: absolute;
         height: 1.5em;
@@ -470,7 +469,7 @@ body main section div article div a p {
         border-radius: 0.625em 0.625em 0.625em 0.625em;
     }
 
-    .flex{
+    .flex {
         margin: auto;
     }
 
@@ -490,19 +489,20 @@ body main section div article div a p {
     body main section div article div a p {
         left: 16.3em;
     }
-       main section article div h3 {
+
+    main section article div h3 {
         left: 18em;
     }
 
     .score {
         left: 18em;
     }
+
     main section article div {
         width: 45em;
     }
 
-
-      main section article div h4 {
+    main section article div h4 {
         width: 7.8em;
         position: absolute;
         height: 1.5em;
@@ -515,8 +515,6 @@ body main section div article div a p {
 }
 
 @media screen and (min-width: 70em) {
-
-
 
     body main div {
         display: flex;
@@ -548,7 +546,6 @@ body main section div article div a p {
         margin: 1em 0em 1em 0em;
         border-radius: 0.625em 0.625em 0.625em 0.625em;
     }
-
 
     body main section article {
         height: 26em;
@@ -627,7 +624,6 @@ body main section div article div a p {
 
 @media screen and (min-width: 83em) {
 
-
     .second-main {
         margin-left: 16em;
         margin-top: -3.6em;
@@ -660,9 +656,9 @@ body main section div article div a p {
     #filters {
         display: block;
         width: 16em;
-        position: absolute;
         height: 90vh;
         background-color: transparent;
+        position: absolute;
     }
 
     main section form {
@@ -691,7 +687,7 @@ body main section div article div a p {
 
     .head {
         text-align: center;
-        color: white;
+        color: #000;
         font-size: 2em;
         margin-bottom: 1.1em;
         margin-top: -2.1em;
