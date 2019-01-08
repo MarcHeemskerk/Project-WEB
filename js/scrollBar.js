@@ -2,7 +2,7 @@
 
        Bron:https://www.cssscript.com/tiny-reading-progress-indicator-pure-javascript-rpbar-js/
     */
-
+/*
 function initProgressBar() {
     document.getElementById("rp-bar").innerHTML = '<div id="rp-read"></div><div id="rp-unread"></div>';
     barHeight = 5;
@@ -46,3 +46,15 @@ function updateProgressBar() {
 document.addEventListener("DOMContentLoaded", function(event) {
   initProgressBar();
 });
+*/
+
+function progressBarScroll() {
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+      height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
+      scrolled = (winScroll / height) * 100;
+  document.getElementById("progressBar").style.width = scrolled + "%";
+}
+
+window.onscroll = function () {
+  progressBarScroll();
+};
