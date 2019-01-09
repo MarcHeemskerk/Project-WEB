@@ -173,6 +173,9 @@ section {
     .second-background {
         background-image: url("https://x-track.github.io/dev/images/second-mobile.svg");
     }
+    .thirth-background {
+        background-image: url("https://x-track.github.io/dev/images/thirth-mobile.svg");
+    }
 
     .storyImage1 {
         background-image: url("https://x-track.github.io/dev/images/1-mobile.svg");
