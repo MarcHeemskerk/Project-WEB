@@ -162,8 +162,8 @@ section {
     background-image: url('images/1-mobile.svg');
 }
 
-    .first-background {
-        background-image: url("https://x-track.github.io/dev/images/start-mobile.svg");
+    .start-background {
+        background-image: url("..//images/Pure-CSS-Scroll-Animation-Arrow.gif");
     }
 
     .first-background {
@@ -233,11 +233,11 @@ section {
 
 body main p {
         font-family: Verdana;
-        line-height: 1.6;
-        color: grey;
-        font-size: 1em;
+        line-height: 1.7;
+        color: lightgray;
+        font-size: 1.1em;
         padding: 2em 2em;
-        background-color: transparent;
+        background-color: black;
     }
 
 footer{
