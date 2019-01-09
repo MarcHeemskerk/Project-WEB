@@ -1,4 +1,5 @@
-/*Header*/
+@media screen and (min-width: 0em) {
+    /*Header*/
 
     * {
         box-sizing: border-box;
@@ -74,96 +75,86 @@
     /* Scroll Bar
 
        Bron:https://www.cssscript.com/tiny-reading-progress-indicator-pure-javascript-rpbar-js/
+
+       &
+
+       https://codepen.io/AllThingsSmitty/pen/gvpNWL?editors=1010
+
     */
-
-
-.header {
-  position: fixed;
-  top: 3em;
-  width: 100%;
-  z-index: 1;
-}
-
-.progress-container {
-  background-color: black;
-  height: 10px;
-  width: 100%;
-}
-
-.progress-bar {
-  background-color: red;
-  height: 10px;
-  width: 0%;
-}
-
-/*
-
-    #rp-bar {
-        width: 100%;
-        top: 3em;
-        right: 0;
+    .header {
         position: fixed;
-        -webkit-box-shadow: 0 0 0px 4px black;
-        -moz-box-shadow: 0 0 0px 4px black;
-        box-shadow: 0 0 0px 4px black;
+        top: 3em;
+        width: 100%;
+        z-index: 1;
     }
 
-    #rp-bar div {
+    .progress-container {
+        background-color: black;
+        height: 10px;
+        width: 100%;
+    }
+
+    .progress-bar {
+        background-color: red;
+        height: 10px;
+        width: 0%;
+    }
+
+
+
+    html,
+    body,
+    main {
+        width: 100%;
         height: 100%;
-        float: left;
-        overflow: hidden;
-        position: relative;
     }
 
-    #rp-read {
+    main,
+    section {
         background-color: red;
     }
 
-    #rp-unread {
-        background-color: black;
+    section {
+        position: relative;
+        width: 100%;
+        height: 100%;
     }
 
-*/
-html, body, main {
-    width: 100%;
-    height: 100%;
-}
+    .bg-wrap {
+        clip: rect(0, auto, auto, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
-main, section{
-    background-color: red;
-}
+    .bg {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        transform: translateZ(0);
+        will-change: transform;
+        background-image: url('images/1-mobile.svg');
+    }
 
-section {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
+    .overlay {
+        position: fixed;
+        right: 0;
+        bottom: 30px;
+        left: 0;
+        padding: 0 15px;
+        z-index: 10;
+    }
 
-.bg-wrap {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.bg {
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    transform: translateZ(0);
-    will-change: transform;
-    background-image: url('images/1-mobile.svg');
-}
 
     .start-background {
-        background-image: url("..//images/Pure-CSS-Scroll-Animation-Arrow.gif");
+        background-image: url("https://x-track.github.io/dev/images/start-mobile.svg");
     }
 
     .first-background {
@@ -173,6 +164,7 @@ section {
     .second-background {
         background-image: url("https://x-track.github.io/dev/images/second-mobile.svg");
     }
+
     .thirth-background {
         background-image: url("https://x-track.github.io/dev/images/thirth-mobile.svg");
     }
@@ -218,20 +210,7 @@ section {
     }
 
 
-.overlay {
-    position: fixed;
-    right: 0;
-    bottom: 30px;
-    left: 0;
-    padding: 0 15px;
-    z-index: 10;
-}
-
-
-
-
-
-body main p {
+    body main p {
         font-family: Verdana;
         line-height: 1.7;
         color: lightgray;
@@ -240,7 +219,126 @@ body main p {
         background-color: black;
     }
 
-footer{
-    position: absolute;
-    top: 960em;
+    footer {
+        position: absolute;
+        top: 977em;
+    }
+}
+
+@media screen and (min-width: 45em) {
+
+        .start-background {
+        background-image: url("..//images/Pure-CSS-Scroll-Animation-Arrow.gif");
+    }
+
+    .first-background {
+        background-image: url("https://x-track.github.io/dev/images/first-mobile.svg");
+    }
+
+    .second-background {
+        background-image: url("https://x-track.github.io/dev/images/second-mobile.svg");
+    }
+
+    .thirth-background {
+        background-image: url("https://x-track.github.io/dev/images/thirth-mobile.svg");
+    }
+
+    .storyImage1 {
+        background-image: url("https://x-track.github.io/dev/images/1-mobile.svg");
+    }
+
+    .storyImage2 {
+        background-image: url("https://x-track.github.io/dev/images/2-mobile.svg");
+    }
+
+    .storyImage3 {
+        background-image: url("https://x-track.github.io/dev/images/3-mobile.svg");
+    }
+
+    .storyImage4 {
+        background-image: url("https://x-track.github.io/dev/images/4-mobile.svg");
+    }
+
+    .storyImage5 {
+        background-image: url("https://x-track.github.io/dev/images/5-mobile.svg");
+    }
+
+    .storyImage6 {
+        background-image: url("https://x-track.github.io/dev/images/6-mobile.svg");
+    }
+
+    .storyImage7 {
+        background-image: url("https://x-track.github.io/dev/images/7-mobile.svg");
+    }
+
+    .storyImage8 {
+        background-image: url("https://x-track.github.io/dev/images/8-mobile.svg");
+    }
+
+    .storyImage9 {
+        background-image: url("https://x-track.github.io/dev/images/9-mobile.svg");
+    }
+
+    .storyImage10 {
+        background-image: url("https://x-track.github.io/dev/images/10-mobile.svg");
+    }
+}
+
+@media screen and (min-width: 70em) {
+
+    .start-background {
+        background-image: url("https://x-track.github.io/dev/images/start-desktop.svg");
+    }
+
+    .first-background {
+        background-image: url("https://x-track.github.io/dev/images/first-desktop.svg");
+    }
+
+    .second-background {
+        background-image: url("https://x-track.github.io/dev/images/second-desktop.svg");
+    }
+
+    .thirth-background {
+        background-image: url("https://x-track.github.io/dev/images/thirth-desktop.svg");
+    }
+
+    .storyImage1 {
+        background-image: url("https://x-track.github.io/dev/images/1-mobile.svg");
+    }
+
+    .storyImage2 {
+        background-image: url("https://x-track.github.io/dev/images/2-mobile.svg");
+    }
+
+    .storyImage3 {
+        background-image: url("https://x-track.github.io/dev/images/3-mobile.svg");
+    }
+
+    .storyImage4 {
+        background-image: url("https://x-track.github.io/dev/images/4-mobile.svg");
+    }
+
+    .storyImage5 {
+        background-image: url("https://x-track.github.io/dev/images/5-mobile.svg");
+    }
+
+    .storyImage6 {
+        background-image: url("https://x-track.github.io/dev/images/6-mobile.svg");
+    }
+
+    .storyImage7 {
+        background-image: url("https://x-track.github.io/dev/images/7-mobile.svg");
+    }
+
+    .storyImage8 {
+        background-image: url("https://x-track.github.io/dev/images/8-mobile.svg");
+    }
+
+    .storyImage9 {
+        background-image: url("https://x-track.github.io/dev/images/9-mobile.svg");
+    }
+
+    .storyImage10 {
+        background-image: url("https://x-track.github.io/dev/images/10-mobile.svg");
+    }
 }
