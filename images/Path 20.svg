@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="594px" height="420px" viewBox="0 0 594 420" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 20</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="24.776495 68.350346 65.4961312 151.731886 21 228.058533 66.8534524 280.835081 35.0696372 378.383847 128.121454 341.369309 183.583076 396.561685 303.252363 334.66243 404.163571 368.609036 458.986666 320.785779 558.20373 345.572512 534.910044 264.978465 571.797352 198.761129 534.910044 135.922573 550.38206 45.2327312 453.743656 68.350346 377.763287 20 282.667524 81.3890592 193.352715 26.4500916 123.382156 81.3890592"></polygon>
+        <filter x="-6.1%" y="-8.3%" width="112.1%" height="117.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="4.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.403921569   0 0 0 0 0.360784314   0 0 0 0 0.325490196  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Path-20">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use stroke="#000000" stroke-width="9" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

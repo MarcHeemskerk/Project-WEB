@@ -163,51 +163,51 @@ section {
 }
 
     .first-background {
-        background-image: url("https://x-track.github.io/dev/images/first-mobile.png");
+        background-image: url("https://x-track.github.io/dev/images/first-mobile.svg");
     }
 
     .second-background {
-        background-image: url("https://x-track.github.io/dev/images/second-mobile.png");
+        background-image: url("https://x-track.github.io/dev/images/second-mobile.svg");
     }
 
     .storyImage1 {
-        background-image: url("https://x-track.github.io/dev/images/1-mobile.png");
+        background-image: url("https://x-track.github.io/dev/images/1-mobile.svg");
     }
 
     .storyImage2 {
-        background-image: url("https://x-track.github.io/dev/images/2-mobile.png");
+        background-image: url("https://x-track.github.io/dev/images/2-mobile.svg");
     }
 
     .storyImage3 {
-        background-image: url("https://x-track.github.io/dev/images/3-mobile.png");
+        background-image: url("https://x-track.github.io/dev/images/3-mobile.svg");
     }
 
     .storyImage4 {
-        background-image: url("https://x-track.github.io/dev/images/4-mobile.png");
+        background-image: url("https://x-track.github.io/dev/images/4-mobile.svg");
     }
 
     .storyImage5 {
-        background-image: url("https://x-track.github.io/dev/images/5-mobile.png");
+        background-image: url("https://x-track.github.io/dev/images/5-mobile.svg");
     }
 
     .storyImage6 {
-        background-image: url("https://x-track.github.io/dev/images/6-mobile.png");
+        background-image: url("https://x-track.github.io/dev/images/6-mobile.svg");
     }
 
     .storyImage7 {
-        background-image: url("https://x-track.github.io/dev/images/7-mobile.png");
+        background-image: url("https://x-track.github.io/dev/images/7-mobile.svg");
     }
 
     .storyImage8 {
-        background-image: url("https://x-track.github.io/dev/images/8-mobile.png");
+        background-image: url("https://x-track.github.io/dev/images/8-mobile.svg");
     }
 
     .storyImage9 {
-        background-image: url("https://x-track.github.io/dev/images/9-mobile.png");
+        background-image: url("https://x-track.github.io/dev/images/9-mobile.svg");
     }
 
     .storyImage10 {
-        background-image: url("https://x-track.github.io/dev/images/10-mobile.png");
+        background-image: url("https://x-track.github.io/dev/images/10-mobile.svg");
     }
 
 
@@ -229,8 +229,9 @@ body main p {
         line-height: 1.6;
         color: grey;
         font-size: 1em;
-        margin: 2em 2em;
-    background-clip: white;
+        padding: 2em 2em;
+        background-color: transparent;
+        backg
     }
 
 footer{
