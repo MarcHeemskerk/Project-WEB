@@ -163,6 +163,10 @@ section {
 }
 
     .first-background {
+        background-image: url("https://x-track.github.io/dev/images/start-mobile.svg");
+    }
+
+    .first-background {
         background-image: url("https://x-track.github.io/dev/images/first-mobile.svg");
     }
 
@@ -231,7 +235,6 @@ body main p {
         font-size: 1em;
         padding: 2em 2em;
         background-color: transparent;
-        backg
     }
 
 footer{
