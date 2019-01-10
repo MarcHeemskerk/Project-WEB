@@ -152,9 +152,9 @@
         z-index: 10;
     }
 
-    h2{
+    h2 {
         position: absolute;
-        bottom:0em;
+        bottom: 0em;
         left: -2.4em;
         width: 6em;
         text-align: center;
@@ -234,94 +234,97 @@
 
 
 
-.container {
-  position: relative;
-  margin: 30em 10em 10em 10.5em;
+    .container {
+        position: relative;
+        margin: 30em 10em 10em 10.5em;
 
-}
+    }
 
-.chevron {
-  position: absolute;
-  width: 28px;
-  height: 8px;
-  opacity: 0;
-  transform: scale3d(0.5, 0.5, 0.5);
-  animation: move 3s ease-out infinite;
-}
+    .chevron {
+        position: absolute;
+        width: 28px;
+        height: 8px;
+        opacity: 0;
+        transform: scale3d(0.5, 0.5, 0.5);
+        animation: move 3s ease-out infinite;
+    }
 
-.chevron:first-child {
-  animation: move 3s ease-out 1s infinite;
-}
+    .chevron:first-child {
+        animation: move 3s ease-out 1s infinite;
+    }
 
-.chevron:nth-child(2) {
-  animation: move 3s ease-out 2s infinite;
-}
+    .chevron:nth-child(2) {
+        animation: move 3s ease-out 2s infinite;
+    }
 
-.chevron:before,
-.chevron:after {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 51%;
-  background: #000;
-}
+    .chevron:before,
+    .chevron:after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 51%;
+        background: #000;
+    }
 
-.chevron:before {
-  left: 0;
-  transform: skew(0deg, 30deg);
-}
+    .chevron:before {
+        left: 0;
+        transform: skew(0deg, 30deg);
+    }
 
-.chevron:after {
-  right: 0;
-  width: 50%;
-  transform: skew(0deg, -30deg);
-}
+    .chevron:after {
+        right: 0;
+        width: 50%;
+        transform: skew(0deg, -30deg);
+    }
 
-@keyframes move {
-  25% {
-    opacity: 1;
+    @keyframes move {
+        25% {
+            opacity: 1;
 
-  }
-  33% {
-    opacity: 1;
-    transform: translateY(30px);
-  }
-  67% {
-    opacity: 1;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-  }
-}
+        }
+
+        33% {
+            opacity: 1;
+            transform: translateY(30px);
+        }
+
+        67% {
+            opacity: 1;
+            transform: translateY(40px);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+        }
+    }
 
 
-@keyframes pulse {
-  to {
-    opacity: 1;
-  }
-}
+    @keyframes pulse {
+        to {
+            opacity: 1;
+        }
+    }
 
 }
 
 @media screen and (min-width: 45em) {
 
-        .start-background {
-        background-image: url("..//images/Pure-CSS-Scroll-Animation-Arrow.gif");
+    .start-background {
+        background-image: url("https://x-track.github.io/dev/images/start-tablet.svg");
     }
 
     .first-background {
-        background-image: url("https://x-track.github.io/dev/images/first-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/first-tablet.svg");
     }
 
     .second-background {
-        background-image: url("https://x-track.github.io/dev/images/second-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/second-tablet.svg");
     }
 
     .thirth-background {
-        background-image: url("https://x-track.github.io/dev/images/thirth-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/thirth-tablet.svg");
     }
 
     .storyImage1 {
@@ -384,42 +387,136 @@
     }
 
     .storyImage1 {
-        background-image: url("https://x-track.github.io/dev/images/1-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/1-desktop.svg");
     }
 
     .storyImage2 {
-        background-image: url("https://x-track.github.io/dev/images/2-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/2-desktop.svg");
     }
 
     .storyImage3 {
-        background-image: url("https://x-track.github.io/dev/images/3-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/3-desktop.svg");
     }
 
     .storyImage4 {
-        background-image: url("https://x-track.github.io/dev/images/4-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/4-desktop.svg");
     }
 
     .storyImage5 {
-        background-image: url("https://x-track.github.io/dev/images/5-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/5-desktop.svg");
     }
 
     .storyImage6 {
-        background-image: url("https://x-track.github.io/dev/images/6-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/6-desktop.svg");
     }
 
     .storyImage7 {
-        background-image: url("https://x-track.github.io/dev/images/7-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/7-desktop.svg");
     }
 
     .storyImage8 {
-        background-image: url("https://x-track.github.io/dev/images/8-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/8-desktop.svg");
     }
 
     .storyImage9 {
-        background-image: url("https://x-track.github.io/dev/images/9-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/9-desktop.svg");
     }
 
     .storyImage10 {
-        background-image: url("https://x-track.github.io/dev/images/10-mobile.svg");
+        background-image: url("https://x-track.github.io/dev/images/10-desktop.svg");
     }
+
+
+    .container {
+        position: relative;
+        margin: 40em 10em 10em 52em;
+
+    }
+
+    .chevron {
+        position: absolute;
+        width: 28px;
+        height: 8px;
+        opacity: 0;
+        transform: scale3d(0.5, 0.5, 0.5);
+        animation: move 3s ease-out infinite;
+    }
+
+    .chevron:first-child {
+        animation: move 3s ease-out 1s infinite;
+    }
+
+    .chevron:nth-child(2) {
+        animation: move 3s ease-out 2s infinite;
+    }
+
+    .chevron:before,
+    .chevron:after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 51%;
+        background: #000;
+    }
+
+    .chevron:before {
+        left: 0;
+        transform: skew(0deg, 30deg);
+    }
+
+    .chevron:after {
+        right: 0;
+        width: 50%;
+        transform: skew(0deg, -30deg);
+    }
+
+    @keyframes move {
+        25% {
+            opacity: 1;
+
+        }
+
+        33% {
+            opacity: 1;
+            transform: translateY(30px);
+        }
+
+        67% {
+            opacity: 1;
+            transform: translateY(40px);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+        }
+    }
+
+
+    @keyframes pulse {
+        to {
+            opacity: 1;
+        }
+    }
+
+    body main p {
+        font-family: Verdana;
+        line-height: 1.9;
+        color: lightgray;
+        font-size: 1.3em;
+        background-color: black;
+        padding-left: 16em;
+        padding-right: 16em;
+        text-align: center;
+    }
+
+    footer {
+        position: absolute;
+        top: 977em;
+    }
+
+
+
 }
+
