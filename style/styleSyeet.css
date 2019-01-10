@@ -1,199 +1,57 @@
-    /*Header*/
-
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    body header {
-        background-color: rgb(102, 91, 82);
-        width: 100vw;
-        height: 3.1em;
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        z-index: 100;
-    }
-
-    body header a {
-        align-self: center;
-    }
-
-    body header a img {
-        height: 1.8em;
-        margin-left: 0.8em;
-        align-self: center;
-    }
-
-    body header h1 {
-        color: white;
-        font-size: 1em;
-        flex-grow: <2>;
-        text-align: center;
-        align-self: center;
-    }
-
-    body header form input {
-        width: 30vw;
-        max-width: 45vw;
-        box-sizing: border-box;
-        border: 0;
-        outline: 0;
-        border: 0.5px solid white;
-        border-radius: 0.3em;
-        font-size: 0.8rem;
-        background: transparent;
-        background-size: 1rem;
-        background-position: 0.6em 0.6em;
-        background-repeat: no-repeat;
-        padding: 0.625em 1.25em 0.625em 2.5em;
-        -webkit-transition: width 0.4s ease-in-out;
-        transition: width 0.4s ease-in-out;
-        margin-top: 0.375em;
-        background-image: url('..//images/search-solid-white.svg');
-    }
-
-    body header form input:focus {
-        width: 50vw;
-        color: white;
-        text-decoration: underline
-    }
-
-    .mijnuov {
-        text-decoration: none;
-        color: white;
-        flex-grow: <0>;
-        align-self: center;
-        font-size: 1.5rem;
-        margin-right: 0.625em;
-    }
 
 
+.ratingsComments {
+    padding: 20px;
+}
 
-    /* Scroll Bar
+.ratingsComments div .star {
+    font-size: 1.5em;
+}
+.ratingsComments div{
+    display: flex;
+    justify-content: space-between;
+}
+.ratingsComments h2{
+    font-size: 4em;
+    margin: 0;
+}
 
-       Bron:https://www.cssscript.com/tiny-reading-progress-indicator-pure-javascript-rpbar-js/
-    */
+.ratingsComments p{
+    margin-left: 1.4em;
+    margin-top: 0em;
+}
 
-    #rp-bar {
-        width: 100%;
-        top: 3em;
-        right: 0;
-        position: fixed;
-        -webkit-box-shadow: 0 0 0px 4px black;
-        -moz-box-shadow: 0 0 0px 4px black;
-        box-shadow: 0 0 0px 4px black;
-    }
+.ratingsComments div p{
+    width: 5em;
+    margin-right: 2.8em;
+    margin-top: 0.3em;
+}
+.ratingsComments div span{
+    margin-left: 0.4em;
+}
 
-    #rp-bar div {
-        height: 100%;
-        float: left;
-        overflow: hidden;
-        position: relative;
-    }
-
-    #rp-read {
-        background-color: red;
-    }
-
-    #rp-unread {
-        background-color: black;
-    }
-
-
-    /*Eric Lucassen Verhaal*/
-
-    .eric p {
-        font-family: Verdana;
-        line-height: 1.6;
-        color: grey;
-        font-size: 1em;
-        margin: 2em 2em;
-    }
-
-    .eric div {
-
-        background-color: red;
-
-        width: 100vw;
-
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-    }
-
-    .first-background {
-        height: 100vh;
-        background-image: url("https://x-track.github.io/dev/images/first-mobile.png");
-    }
-
-    .second-background {
-        height: 100vh;
-        background-image: url("https://x-track.github.io/dev/images/second-mobile.png");
-    }
-
-    .storyImage1,
-    .storyImage2,
-    .storyImage3,
-    .storyImage4,
-    .storyImage5,
-    .storyImage6,
-    .storyImage7,
-    .storyImage8,
-    .storyImage9,
-    .storyImage10 {
-        height: 75vh;
-    }
+.star:hover {
+    color: #FCD902;
+}
 
 
-    .storyImage1 {
-        background-image: url("https://x-track.github.io/dev/images/1-mobile.png");
-    }
+.ratingsComments img{
+    width: 70%;
 
-    .storyImage2 {
-        background-image: url("https://x-track.github.io/dev/images/2-mobile.png");
-    }
+}
 
-    .storyImage3 {
-        background-image: url("https://x-track.github.io/dev/images/3-mobile.png");
-    }
-
-    .storyImage4 {
-        background-image: url("https://x-track.github.io/dev/images/4-mobile.png");
-    }
-
-    .storyImage5 {
-        background-image: url("https://x-track.github.io/dev/images/5-mobile.png");
-    }
-
-    .storyImage6 {
-        background-image: url("https://x-track.github.io/dev/images/6-mobile.png");
-    }
-
-    .storyImage7 {
-        background-image: url("https://x-track.github.io/dev/images/7-mobile.png");
-    }
-
-    .storyImage8 {
-        background-image: url("https://x-track.github.io/dev/images/8-mobile.png");
-    }
-
-    .storyImage9 {
-        background-image: url("https://x-track.github.io/dev/images/9-mobile.png");
-    }
-
-    .storyImage10 {
-        background-image: url("https://x-track.github.io/dev/images/10-mobile.png");
-    }
+.ratingsComments div:last-of-type img{
+    box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
+    border-radius: 0.625em 0.625em 0.625em 0.625em;
+    display: none;
+}
 
 
-    /* Comments */
-    footer {
-        margin-top: 2em;
-    }
-
-
+.ratingsComments div:last-of-type{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:10em;
+    margin-left: 5em;
+    display: block;
+}
