@@ -625,8 +625,10 @@
 @media screen and (min-width: 83em) {
 
     .second-main {
-        margin-left: 16em;
+        margin-left: 23em;
+        margin-right: auto;
         margin-top: -3.6em;
+        width: 70vw;
     }
 
     .buttons {
@@ -641,6 +643,7 @@
         margin-top: 3.9em;
         display: flex;
         justify-content: space-around;
+
     }
 
     #verrasMe {
@@ -694,4 +697,18 @@
         font-weight: bolder;
 
     }
+
+    main section article a img {
+        width: 20em;
+        height: 11em;
+        z-index: 10;
+        margin: auto;
+    }
+    body main section article {
+        height: 26em;
+        width: 20.5em;
+        margin: 2em 2em 2em 2em;
+    }
+
 }
+

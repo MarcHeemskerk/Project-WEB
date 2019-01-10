@@ -18,3 +18,16 @@ function showFilters() {
     }
 document.getElementById("filtersShowBtn").addEventListener("click", showFilters);
 
+var like = document.getElementById("yeet");
+
+
+
+function changeclass() {
+
+console.log("yeet");
+like.classList.remove ="notLiked";
+like.classList.add ="liked";
+
+}
+
+like.addEventListener("click", changeclass);
