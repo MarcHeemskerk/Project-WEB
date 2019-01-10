@@ -114,6 +114,23 @@
         background-color: red;
     }
 
+    body main p {
+        font-family: Verdana;
+        line-height: 1.7;
+        color: lightgray;
+        font-size: 1.1em;
+        padding: 2em 2em;
+        background-color: black;
+        text-align: center;
+    }
+
+    footer {
+        position: absolute;
+        top: 900em;
+    }
+
+
+
     section {
         position: relative;
         width: 100%;
@@ -159,6 +176,7 @@
         width: 6em;
         text-align: center;
     }
+
 
 
     .start-background {
@@ -215,22 +233,6 @@
 
     .storyImage10 {
         background-image: url("https://x-track.github.io/dev/images/10-mobile.svg");
-    }
-
-
-    body main p {
-        font-family: Verdana;
-        line-height: 1.7;
-        color: lightgray;
-        font-size: 1.1em;
-        padding: 2em 2em;
-        background-color: black;
-        text-align: center;
-    }
-
-    footer {
-        position: absolute;
-        top: 950em;
     }
 
 
@@ -312,13 +314,13 @@
 
 @media screen and (min-width: 45em) {
 
-       .container {
+    .container {
         position: relative;
         margin: 50em 10em 10em 23em;
 
     }
 
-        body main p {
+    body main p {
         font-family: Verdana;
         line-height: 1.9;
         color: lightgray;
@@ -328,6 +330,12 @@
         padding-right: 5em;
         text-align: center;
     }
+
+    footer {
+        position: absolute;
+        top: 1180em;
+    }
+
 
     .start-background {
         background-image: url("https://x-track.github.io/dev/images/start-tablet.svg");
@@ -388,6 +396,30 @@
 
 @media screen and (min-width: 70em) {
 
+
+
+    .container {
+        position: relative;
+        margin: 40em 10em 10em 52em;
+
+    }
+
+    body main p {
+        font-family: Verdana;
+        line-height: 1.9;
+        color: lightgray;
+        font-size: 1.3em;
+        background-color: black;
+        padding-left: 16em;
+        padding-right: 16em;
+        text-align: center;
+    }
+
+    footer {
+        position: absolute;
+        top: 1070em;
+    }
+
     .start-background {
         background-image: url("https://x-track.github.io/dev/images/start-desktop.svg");
     }
@@ -443,31 +475,6 @@
     .storyImage10 {
         background-image: url("https://x-track.github.io/dev/images/10-desktop.svg");
     }
-
-
-    .container {
-        position: relative;
-        margin: 40em 10em 10em 52em;
-
-    }
-
-    body main p {
-        font-family: Verdana;
-        line-height: 1.9;
-        color: lightgray;
-        font-size: 1.3em;
-        background-color: black;
-        padding-left: 16em;
-        padding-right: 16em;
-        text-align: center;
-    }
-
-    footer {
-        position: absolute;
-        top: 977em;
-    }
-
-
 
 }
 
