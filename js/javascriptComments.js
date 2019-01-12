@@ -22,6 +22,10 @@ var getSpan2 = document.querySelectorAll(".yote");
 
 /*          SCROLLBAR           */
 
+/*          BRON:               */
+/*  https://codepen.io/         */
+/*  AllThingsSmitty/pen/gvpNWL  */
+
 function progressBarScroll() {
   let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
       height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
@@ -35,6 +39,7 @@ window.onscroll = function () {
 
 
 
+/*          CLASSCHANGER        */
 
 function classChangerStars() {
     if (yote === 1) {
@@ -53,6 +58,7 @@ function classChangerStars() {
 }
 
 
+/*          FEEDBACK RATING     */
 
 function hideFeedback() {
     imgSource.src = imageFolder + "10-desktop.svg";
@@ -71,13 +77,16 @@ function showFeedback() {
     interval = setInterval(hideFeedback, 1700);
 }
 
+
+
 getSpan1.forEach(getStars1 => {
 
     getStars1.addEventListener("click", showFeedback);
 });
 
 
-
+/*          FOR.EACH LOOP       */
+/*  https://medium.com/@jsdevray/5-ways-to-loop-over-dom-elements-from-queryselectorall-in-javascript-55bd66ca4128  */
 
 function hideError() {
 
@@ -119,9 +128,11 @@ function textCounter(field, field2, maxlimit) {
 
 
 
+
 /*          REVIEWS          */
 
 var article = document.querySelector(".ratingsComments section article:first-of-type");
+
 
 
 
@@ -139,7 +150,6 @@ function classChangerShowArticle() {
 }
 
 plaatsReviewButton.addEventListener("click", classChangerShowArticle);
-
 
 
 
