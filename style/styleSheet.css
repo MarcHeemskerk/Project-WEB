@@ -74,6 +74,15 @@
         text-decoration: underline
     }
 
+    .mijnuov {
+        text-decoration: none;
+        color: white;
+        flex-grow: <0>;
+        align-self: center;
+        font-size: 1.5rem;
+        margin-right: 0.625em;
+    }
+
     main section h2 {
         text-align: center;
         margin: 1em 0em 1em 0em;
@@ -116,15 +125,6 @@
         text-align: center;
         margin: auto;
         background-color: rgb(252, 217, 0);
-    }
-
-    .mijnuov {
-        text-decoration: none;
-        color: white;
-        flex-grow: <0>;
-        align-self: center;
-        font-size: 1.5rem;
-        margin-right: 0.625em;
     }
 
     #filtersShowBtn {
@@ -310,6 +310,9 @@
     }
 
     .liked {
+        color: rgb(252, 217, 0);
+    }
+    .notLiked {
         color: rgb(252, 217, 0);
     }
 

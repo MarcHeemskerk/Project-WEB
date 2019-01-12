@@ -18,10 +18,6 @@
         z-index: 100;
     }
 
-    body header a {
-        align-self: center;
-    }
-
     body header a img {
         height: 1.8em;
         margin-left: 0.8em;
@@ -49,11 +45,12 @@
         background-size: 1rem;
         background-position: 0.6em 0.6em;
         background-repeat: no-repeat;
+        background-image: url('..//images/search-solid-white.svg');
         padding: 0.625em 1.25em 0.625em 2.5em;
         -webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
-        margin-top: 0.375em;
-        background-image: url('..//images/search-solid-white.svg');
+        margin-top: 0.6em;
+
     }
 
     body header form input:focus {

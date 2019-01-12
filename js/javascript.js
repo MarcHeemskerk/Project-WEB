@@ -9,7 +9,7 @@
 var verrasMe = document.getElementById("verrasMe");
 
 function verrasMeFunc() {
-    window.location = 'ericLucassenv2.html';
+    window.location = './verhalen/ericLucassen.html';
 }
 
 verrasMe.addEventListener("click", verrasMeFunc);
