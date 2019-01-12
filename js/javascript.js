@@ -27,15 +27,20 @@ function showFilters() {
     if (boool ===1){
 
         boool = 0;
-        filters.style.display = "block";
+        filters.classList.remove("hide");
+        filters.classList.add("show");
 
     }
     else{
         boool = 1;
-        filters.style.display = "none";
+        filters.classList.remove("show");
+        filters.classList.add("hide");
     }
 
 
 }
 
 filtersBtn.addEventListener("click", showFilters);
+
+
+

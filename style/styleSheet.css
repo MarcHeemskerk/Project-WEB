@@ -171,7 +171,6 @@
         height: 100%;
         width: 100vw;
         background-color: rgb(252, 217, 0);
-        display: none;
     }
 
     body main div {
@@ -321,7 +320,16 @@
     .flex {
         background-color: transparent;
     }
+
+    .show{
+        display: block;
+    }
+
+    .hide{
+        display: none;
+    }
 }
+
 
 @media screen and (min-width: 32em) {
 
@@ -353,7 +361,7 @@
 
     #filters {
         padding-top: 1em;
-        display: none;
+
     }
 
     .subhead {
@@ -440,6 +448,7 @@
     }
 }
 
+
 @media screen and (min-width: 52em) {
 
     #filtersShowBtn {
@@ -471,7 +480,7 @@
     #filters {
         padding-top: 1em;
         height: 100%;
-        display: none;
+
     }
 
     .subhead {
@@ -565,7 +574,6 @@
 }
 
 
-
 @media screen and (min-width: 70em) {
 
     body main div {
@@ -581,7 +589,7 @@
     #filters {
         padding-top: 1em;
         height: 35vh;
-        display: none;
+
     }
 
     main section form input[type="submit"] {
@@ -701,6 +709,7 @@
 
 }
 
+
 @media screen and (min-width: 80em) {
 
     .second-main {
@@ -739,7 +748,7 @@
     }
 
     #filters {
-        display: block;
+
         width: 16em;
         height: 90vh;
         background-color: transparent;
@@ -824,6 +833,10 @@
     main section form fieldset select {
         width: 94%;
 
+    }
+
+      .hide{
+        display: block;
     }
 
 }
