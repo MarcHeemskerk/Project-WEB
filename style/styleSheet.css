@@ -79,6 +79,37 @@
         margin: 1em 0em 1em 0em;
     }
 
+    main section form fieldset select {
+        width: 16em;
+        text-align: center;
+        padding: 0;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+        border-radius: 0.625em 0.625em 0.625em 0.625em;
+        color: black;
+        background-color: white;
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 1em;
+        margin-left: 0.9em;
+    }
+
+    main section form input[type="submit"] {
+        width: 16em;
+        text-align: center;
+        padding: 0;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+        border: 1px solid #e7772b;
+        border-radius: 0.5em;
+        color: white;
+        background-color: #e7772b;
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 1em;
+        margin-left: 0.9em;
+    }
+
     .subhead {
         padding-top: 3.2em;
         font-size: 1.3em;
@@ -137,10 +168,10 @@
     }
 
     #filters {
-        height: 100vh;
+        height: 100%;
         width: 100vw;
         background-color: rgb(252, 217, 0);
-
+        display: none;
     }
 
     body main div {
@@ -176,7 +207,7 @@
         height: 2em;
         background-color: white;
         border-style: solid;
-        border-color: orange;
+        border-color: #e7772b;
         border-width: 2px;
         margin: 0em 0em 0em 1em;
         display: inline-block;
@@ -188,11 +219,11 @@
     }
 
     main section form fieldset [type=checkbox]:checked + label::after {
-        background-color: orange;
+        background-color: #e7772b;
     }
 
     main section form fieldset [type=radio]:checked + label::after {
-        background-color: orange;
+        background-color: #e7772b;
     }
 
     main section form fieldset input {
@@ -246,7 +277,7 @@
         margin: 0em 0em 0em 0em;
         padding: 0.5em;
         box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
-        color: orange;
+        color: #e7772b;
         background-color: white;
         position: absolute;
         right: 0.0em;
@@ -256,7 +287,7 @@
     main section article div h4 {
         font-size: 1.0rem;
         font-weight: 300;
-        background-color: orange;
+        background-color: #e7772b;
         border-radius: 0.625em;
         width: 40%;
         text-align: center;
@@ -322,6 +353,7 @@
 
     #filters {
         padding-top: 1em;
+        display: none;
     }
 
     .subhead {
@@ -438,7 +470,8 @@
 
     #filters {
         padding-top: 1em;
-        height: 50vh;
+        height: 100%;
+        display: none;
     }
 
     .subhead {
@@ -447,6 +480,20 @@
         text-align: center;
         margin: auto;
         background-color: rgb(252, 217, 0);
+    }
+
+    main section form fieldset select {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+        border-radius: 0.625em 0.625em 0.625em 0.625em;
+        color: black;
+        background-color: white;
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 1em;
     }
 
     main section form {
@@ -517,6 +564,8 @@
     }
 }
 
+
+
 @media screen and (min-width: 70em) {
 
     body main div {
@@ -532,6 +581,17 @@
     #filters {
         padding-top: 1em;
         height: 35vh;
+        display: none;
+    }
+
+    main section form input[type="submit"] {
+        width: 16em;
+
+    }
+
+    main section form fieldset select {
+        width: 94%;
+
     }
 
     #verrasMe {
@@ -641,7 +701,7 @@
 
 }
 
-@media screen and (min-width: 83em) {
+@media screen and (min-width: 80em) {
 
     .second-main {
         margin-left: 23em;
@@ -754,6 +814,16 @@
         height: 26em;
         width: 20.5em;
         margin: 2em 2em 2em 2em;
+    }
+
+    main section form input[type="submit"] {
+        width: 15em;
+
+    }
+
+    main section form fieldset select {
+        width: 94%;
+
     }
 
 }
