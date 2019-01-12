@@ -175,32 +175,136 @@
 
     </main>
 
+
+
+
+
     <footer class="ratingsComments">
 
+        <section>
 
-        <h1>Ratings (254)</h1>
+            <h3>Ratings (254)</h3>
 
-        <div>
-            <h3>4.6</h3>
+            <div>
+                <h4>4.6</h4>
 
-            <img src="images/star-raitings.svg" alt="">
-        </div>
+                <img src="images/star-raitings.svg" alt="Raiting schema">
+            </div>
 
-        <p>out of 5</p>
+            <p>out of 5</p>
 
-        <div>
-            <p>tap to rate:</p>
-            <span id="star1" class="fa fa-star star"></span>
-            <span id="star2" class="fa fa-star star"></span>
-            <span id="star3" class="fa fa-star star"></span>
-            <span id="star4" class="fa fa-star star"></span>
-            <span id="star5" class="fa fa-star star"></span>
-        </div>
+            <div>
+                <p>tap to rate:</p>
+                <span class="yeet fa fa-star star"></span>
+                <span class="yeet fa fa-star star"></span>
+                <span class="yeet fa fa-star star"></span>
+                <span class="yote fa fa-star starError"></span>
+                <span class="yote fa fa-star starError"></span>
+            </div>
 
-        <div>
-            <img id="animatie" src="images/10-desktop.svg" alt="">
-        </div>
+            <div>
+                <img id="animatie" src="./images/10-desktop.svg" alt="feedback an">
+            </div>
+        </section>
+
+        <section>
+
+            <h3>Reviews (87)</h3>
+
+            <form>
+                <!-- Heeft geen action omdat ik het comments plaatsen wilde fake aan de hand van javascript. -->
+                <input disabled maxlength="3" value="135" id="counter">
+                <textarea onkeyup="textCounter(this,'counter',135);" id="message" placeholder="Schrijf een review"></textarea>
+            </form>
+
+            <button>Plaats Review</button>
+
+        </section>
+
+        <section>
+
+            <article class=hide>
+                <div>
+
+                    <h5>
+                        Marc Heemskerk
+                    </h5>
+
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                    <h6>verwijder</h6>
+
+                </div>
+
+                <p>5 seconden geleden.</p>
+
+                <p>Dit verhaal is super leuk om te lezen.</p>
+
+            </article>
+
+            <article>
+                <div>
+
+                    <h5>
+                        Kraan
+                    </h5>
+
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+
+                <p>1 uur geleden.</p>
+
+                <p>Super verhaal! Een aanrader!</p>
+
+            </article>
+
+            <article>
+                <div>
+
+                    <h5>
+                        Joop
+                    </h5>
+
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+
+                <p>Gisteren</p>
+
+                <p>Ik heb echt genoten van dit verhaal. Super mooi vormgegeven in een stijl waar het echt hij past.</p>
+
+            </article>
+
+            <article>
+                <div>
+
+                    <h5>
+                        Stink
+                    </h5>
+
+                    <span class="fa fa-star"></span>
+
+                </div>
+
+                <p>12-01-2019</p>
+
+                <p>Man... Dit verhaal vind ik zo slecht. Het heeft geen leuk einden en hij loopt alleen maar te schelden.</p>
+
+            </article>
+
+        </section>
     </footer>
+    <script src="js/scrollBar.js"></script>
     <script src="js/javascriptComments.js"></script>
 
 </body>

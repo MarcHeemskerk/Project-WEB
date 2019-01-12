@@ -129,48 +129,96 @@
     /* FOOTER!*/
 
 
-
     .ratingsComments {
+        font-family: 'Roboto', sans-serif;
+        background-color: rgb(247, 248, 247);
+
         position: absolute;
-        padding: 20px;
-        margin-top: 925em;
+        top: 990em;
     }
 
-    .ratingsComments div .star {
+    .ratingsComments section {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
+        border-radius: 0.625em 0.625em 0.625em 0.625em;
+        margin-bottom: 1em;
+    }
+
+    .ratingsComments section:last-of-type {
+        background-color: white;
+        padding: 20px;
+        box-shadow: none;
+        border-radius: 0.625em 0.625em 0.625em 0.625em;
+        margin-bottom: 1em;
+    }
+
+
+    .ratingsComments section div .star {
         font-size: 1.5em;
     }
 
-    .ratingsComments div {
+    .ratingsComments section div {
         display: flex;
         justify-content: space-between;
     }
 
-    .ratingsComments h3 {
+    .ratingsComments section:first-of-type h3 {
+        font-size: 2.2em;
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    .ratingsComments section:last-of-type h3 {
+        font-size: 2.2em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .ratingsComments section h4 {
         font-size: 4em;
         margin: 0;
     }
 
-    .ratingsComments p {
+    .ratingsComments section p {
         margin-left: 1.4em;
         margin-top: 0em;
     }
 
-    .ratingsComments div p {
+    .ratingsComments section div p {
         width: 5em;
         margin-right: 2.8em;
+        margin-left: 0.8em;
         margin-top: 0.3em;
     }
 
-    .ratingsComments div span {
-        margin-left: 0.4em;
+    .ratingsComments section div span {
+        margin-left: 0.3em;
     }
 
-    .star:hover {
+    .yeet:hover {
         color: #FCD902;
     }
 
+    .yote:hover {
+        color: #FCD902;
+    }
 
-    .ratingsComments img {
+    .starliked {
+        color: #FCD902;
+        font-size: 25px;
+    }
+
+    .star {
+        color: black;
+        font-size: 25px;
+    }
+
+    .starError {
+        font-size: 25px;
+    }
+
+    .ratingsComments section img {
         width: 70%;
 
     }
@@ -181,8 +229,7 @@
         display: none;
     }
 
-
-    .ratingsComments div:last-of-type {
+    .ratingsComments section div:last-of-type {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -191,10 +238,110 @@
         display: block;
     }
 
+    .ratingsComments section form textarea {
+        width: 75vw;
+        margin: auto;
+        padding: 1em;
+        height: 35vw;
+        margin-bottom: 1em;
+        line-height: 1.4;
+        box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
+        border-radius: 0.625em 0.625em 0.625em 0.625em;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    #counter {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+
+    }
+
+    button {
+        width: 10em;
+        text-align: center;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+        border: 1px solid #e7772b;
+        border-radius: 0.5em;
+        color: white;
+        background-color: #e7772b;
+        font-size: 1em;
+        font-weight: 600;
+        margin: auto;
+        box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
+        border-radius: 0.625em 0.625em 0.625em 0.625em;
+    }
+
+    .ratingsComments section article h5 {
+        margin: 0em 0.5em 0.5em 0em;
+        font-size: 1.1em;
+    }
+
+    .ratingsComments section article h6{
+        margin: 0.2em 0em 0em 4em;
+        color: #e7772b;
+        font-size: 0.8em;
+    }
+
+    .ratingsComments section article:first-of-type {
+        background-color: white;
+        border-left: 1em solid #e7772b;
+        padding: 1em 1em 1em 0.5em;
+        box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
+        border-radius: 0.625em 0.625em 0.625em 0.625em;
+        margin-bottom: 1em;
+    }
+
+    .hide {
+        display: none;
+    }
+
+
+    .show {
+        display: block;
+    }
+
+    .ratingsComments section article {
+        background-color: white;
+        padding: 1em 1em 1em 1.5em;
+        box-shadow: 0em 0.5em 1em 0em rgba(136, 136, 136, 0.3);
+        border-radius: 0.625em 0.625em 0.625em 0.625em;
+        margin-bottom: 1em;
+    }
+
+    .ratingsComments section article div span {
+        color: #FCD902;
+    }
+
+    .ratingsComments section article p:first-of-type {
+        color: gray;
+        font-size: 0.9em;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+    }
+
+    .ratingsComments section article p:last-of-type {
+        color: black;
+        margin: 2em 0em 0.5em 0em;
+        line-height: 1.5;
+    }
+
+    .ratingsComments section article div:last-of-type {
+        display: flex;
+        ;
+        position: inherit;
+        margin-left: 0em;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 
 
 
-    section {
+
+
+    main section {
         position: relative;
         width: 100%;
         height: 100%;
