@@ -251,11 +251,15 @@
         text-align: left;
     }
 
-    #counter {
+    .ratingsComments section form input:first-of-type {
         font-size: 1em;
         margin-bottom: 0.5em;
-
+        margin-top: 0.5em;
+        text-decoration: none;
+        border: none;
+        outline: none;
     }
+
 
     button {
         width: 10em;
@@ -278,7 +282,7 @@
         font-size: 1.1em;
     }
 
-    .ratingsComments section article h6{
+    .ratingsComments section article h6 {
         margin: 0.2em 0em 0em 4em;
         color: #e7772b;
         font-size: 0.8em;
