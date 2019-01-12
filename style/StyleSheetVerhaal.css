@@ -68,6 +68,10 @@
         margin-right: 0.625em;
     }
 
+    .block{
+        align-self: center;
+    }
+
 
     /* Scroll Bar
 

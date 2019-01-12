@@ -7,7 +7,7 @@ var yote;
 var findClass;
 var getStarsForChangeClass = document.querySelectorAll(".yeet");
 
-var imageFolder = "images/";
+var imageFolder = "../images/";
 
 var imgSource = document.querySelector(".ratingsComments div:last-of-type img");
 
@@ -17,6 +17,21 @@ var getStars1;
 var getSpan1 = document.querySelectorAll(".yeet");
 var getStars2;
 var getSpan2 = document.querySelectorAll(".yote");
+
+
+
+/*          SCROLLBAR           */
+
+function progressBarScroll() {
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+      height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
+      scrolled = (winScroll / height) * 100;
+  document.getElementById("progressBar").style.width = scrolled + "%";
+}
+
+window.onscroll = function () {
+  progressBarScroll();
+};
 
 
 
@@ -36,7 +51,6 @@ function classChangerStars() {
         });
     }
 }
-
 
 
 
