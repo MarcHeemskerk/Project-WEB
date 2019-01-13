@@ -33,9 +33,8 @@ function showFilters() {
         filters.classList.remove("show");
         filters.classList.add("hide");
     }
-
-
 }
+
 
 filtersBtn.addEventListener("click", showFilters);
 
