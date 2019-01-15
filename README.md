@@ -39,35 +39,39 @@ De website maakt gebruik van 5 breakpoints oftewel media queries,
 die ervoor zorgen dat de content er op meerdere devices goed uitziet. Onderstaand zal ik toelichting geven over belangrijke of complexe codes per pagina.
 
 
-In mijn html heb ik in de <body> 2/3 elementen gebruik
-<header>, <main>, <footer> In mijn index.html & login.html heb ik geen gebruik gemaakt van een <footer>
+In mijn html heb ik in de body 2/3 elementen gebruik
+header, main, footer In mijn index.html & login.html heb ik geen gebruik gemaakt van een footer
 
 
 index.html
-De <header> is de navigatie balk die overal het zelfde is.
+De header is de navigatie balk die overal het zelfde is.
 
-de main is opgedeeld is 2 <sections>
-1 in het eerste <section> zitten de filters en sorteer fucties
+de main is opgedeeld is 2 sections
+1 in het eerste section zitten de filters en sorteer fucties
 
-2 in de tweede <section> heb ik gebruikt voor de <article> in te zetten. De <article> zijn de verhalen op de index.html
+2 in de tweede section heb ik gebruikt voor de article in te zetten. De article zijn de verhalen op de index.html
 
 
 ### CSS
 
-CSS: <Home>    CSS: <Login>    CSS: <Verhaal>
+CSS: Homem, Login, Verhaal
 
-De CSS van mijn home pagina heb ik los gehouden van mijn verhalen en login. Alleen het gedeelte van de <header> is het zelfde op elke pagina door mijn gehele website.
+De CSS van mijn home pagina heb ik los gehouden van mijn verhalen en login. Alleen het gedeelte van de header is het zelfde op elke pagina door mijn gehele website.
 
 
 ### JS
 Ik hebmijn javascript voor mijn verhaal appart gehouden van mijn website pagina's. Dit heb ik gedaan, omdat anders de home pagina onnodige javascript laad.
 
-In de javascript heb ik gewerkt met <addeventlisseners> en deze heb ik geselecteerd met <getelementbyid> & <Queryselector>
+In de javascript heb ik gewerkt met addeventlisseners en deze heb ik geselecteerd met getElementById & querySelectorAll & querySelector
 
 
 #### Author
 16 januari 2018
+</br>
 Marc Heemskerk
+</br>
 marc-heemskerk@hotmail.nl
+</br>
 0648860821
+</br>
 Project WEB
