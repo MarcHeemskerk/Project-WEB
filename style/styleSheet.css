@@ -38,6 +38,7 @@
         height: 1.8em;
         margin-left: 0.8em;
         align-self: center;
+        display: flex;
     }
 
     body header h1 {
@@ -196,6 +197,8 @@
         position: relative;
         padding: 0.9em;
     }
+
+    /*Checkboxes gestyled met hulp van Wiebe*/
 
     main section form fieldset label::after {
         content: "";
