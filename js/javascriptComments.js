@@ -44,7 +44,7 @@ window.onscroll = function () {
 function classChangerStars() {
     if (yote === 1) {
 
-        tapTo.innerHTML="verwijder rate"
+        tapTo.innerHTML="verwijder rate";
         tapTo.classList.remove("rate");
         tapTo.classList.add("verwijder");
         yote = 0;
@@ -172,6 +172,7 @@ function classChangerShowArticle() {
 }
 
 plaatsReviewButton.addEventListener("click", classChangerShowArticle);
+
 
 
 /*          REVIEW VERWIJDEREN          */

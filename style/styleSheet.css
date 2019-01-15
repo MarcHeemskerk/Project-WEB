@@ -43,7 +43,6 @@
     body header h1 {
         color: white;
         font-size: 1em;
-        flex-grow: <2>;
         text-align: center;
         align-self: center;
     }
@@ -66,7 +65,6 @@
         -webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
         margin-top: 0.6em;
-
     }
 
     body header form input:focus {
@@ -78,7 +76,6 @@
     .mijnuov {
         text-decoration: none;
         color: white;
-        flex-grow: <0>;
         align-self: center;
         font-size: 1.5rem;
         margin-right: 0.625em;
@@ -110,7 +107,6 @@
         padding: 0;
         padding-top: 0.6em;
         padding-bottom: 0.6em;
-        border: 1px solid #e7772b;
         border-radius: 0.5em;
         color: white;
         background-color: #e7772b;
@@ -313,6 +309,7 @@
     .liked {
         color: rgb(252, 217, 0);
     }
+
     .notLiked {
         color: rgb(252, 217, 0);
     }
@@ -426,7 +423,7 @@
         position: absolute;
         padding-right: 2em;
         left: 35vw;
-        top 1em;
+        top: 1em;
     }
 
     main section article div h4 {
@@ -591,7 +588,7 @@
     }
 
     #filters {
-        padding-top: 1em;
+        padding-top: 0em;
         height: 35vh;
 
     }
@@ -690,8 +687,6 @@
         bottom: 3.4em;
         right: auto;
         left: 1.2em;
-        width:
-
     }
 
     .likes {
@@ -771,13 +766,13 @@
 
     main section form fieldset {
         width: 16em;
-        margin-top: 1.5em;
+        margin-top: 1em;
     }
 
     main section form fieldset:first-of-type {
         width: 16em;
         margin-top: 0em;
-        padding-top: 0.9em;
+        padding-top: 0.6em;
     }
 
     main section form fieldset {

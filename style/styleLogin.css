@@ -36,7 +36,6 @@
     body header h1 {
         color: white;
         font-size: 1em;
-        flex-grow: <2>;
         text-align: center;
         align-self: center;
     }
@@ -71,7 +70,6 @@
     .mijnuov {
         text-decoration: none;
         color: white;
-        flex-grow: <0>;
         align-self: center;
         font-size: 1.5rem;
         margin-right: 0.625em;
@@ -129,7 +127,6 @@
         padding: 0;
         padding-top: 0.6em;
         padding-bottom: 0.6em;
-        border: 1px solid #e7772b;
         border-radius: 0.5em;
         color: white;
         background-color: #e7772b;
@@ -185,8 +182,6 @@
         color: #54a5dd;
     }
 
-
-
     .loginPage article:last-of-type a {
         width: 8em;
         text-align: center;
@@ -194,7 +189,6 @@
         padding: 0;
         padding-top: 0.6em;
         padding-bottom: 0.6em;
-        border: 1px solid #675c53;
         border-radius: 0.5em;
         color: white;
         background-color: #675c53;

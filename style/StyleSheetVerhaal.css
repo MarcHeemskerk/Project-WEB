@@ -27,7 +27,6 @@
     body header h1 {
         color: white;
         font-size: 1em;
-        flex-grow: <2>;
         text-align: center;
         align-self: center;
     }
@@ -62,7 +61,6 @@
     .mijnuov {
         text-decoration: none;
         color: white;
-        flex-grow: <0>;
         align-self: center;
         font-size: 1.5rem;
         margin-right: 0.625em;
@@ -153,7 +151,6 @@
         border-radius: 0.625em 0.625em 0.625em 0.625em;
         margin-bottom: 1em;
     }
-
 
     .ratingsComments section div .star {
         font-size: 1.5em;
@@ -267,7 +264,6 @@
         text-align: center;
         padding-top: 0.6em;
         padding-bottom: 0.6em;
-        border: 1px solid #e7772b;
         border-radius: 0.5em;
         color: white;
         background-color: #e7772b;
@@ -305,8 +301,6 @@
     .show {
         display: block;
     }
-
-
 
     .ratingsComments section article {
         background-color: white;
@@ -361,8 +355,6 @@
         display: block;
     }
 
-
-
     main section {
         position: relative;
         width: 100%;
@@ -408,8 +400,6 @@
         width: 6em;
         text-align: center;
     }
-
-
 
     .start-background {
         background-image: url("..//images/ApprehensiveHorribleHorsemouse-size_restricted.gif");
@@ -741,9 +731,6 @@
         margin: 0.2em 0em 0em 22em;
 
     }
-
-
-
 
     .container {
         position: relative;
