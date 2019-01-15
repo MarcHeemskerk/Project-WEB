@@ -670,11 +670,12 @@
         height: 4em;
         margin: 0;
         padding: 0;
-
+        top: 10em;
     }
 
     main section article div h4 {
-        padding: 0em;
+        padding-top: 2px;
+        padding-bottom: 2px;
         position: absolute;
         height: 1.5em;
         top: auto;
